@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEITickManager -ObjectName=OEITickManager -FallbackName=OEITickManager
+#include "OEITickManager.h"
+
 #include "OWTickManager.generated.h"
 
 UCLASS(Blueprintable)

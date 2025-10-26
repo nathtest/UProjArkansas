@@ -3,7 +3,7 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EHorizontalAlignment -FallbackName=EHorizontalAlignment
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EVerticalAlignment -FallbackName=EVerticalAlignment
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Margin -FallbackName=Margin
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=PanelSlot -FallbackName=PanelSlot
+#include "Components/PanelSlot.h"
 #include "ButtonBaseSlot.generated.h"
 
 UCLASS(Blueprintable)

@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIWwise -ObjectName=OEIWwiseAmbientVolumeData -FallbackName=OEIWwiseAmbientVolumeData
+#include "OEIWwiseAmbientVolumeData.h"
+
 #include "IndianaAkAmbientVolumeData.generated.h"
 
 UCLASS(Blueprintable)

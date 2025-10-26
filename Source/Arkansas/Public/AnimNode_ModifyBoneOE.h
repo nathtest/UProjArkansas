@@ -1,7 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AnimGraphRuntime -ObjectName=AnimNode_SkeletalControlBase -FallbackName=AnimNode_SkeletalControlBase
-//CROSS-MODULE INCLUDE V2: -ModuleName=AnimGraphRuntime -ObjectName=EBoneModificationMode -FallbackName=EBoneModificationMode
+#include "BoneControllers/AnimNode_SkeletalControlBase.h"
+#include <BoneControllers/AnimNode_ModifyBone.h>
+
+
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BoneReference -FallbackName=BoneReference

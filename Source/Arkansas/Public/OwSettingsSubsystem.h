@@ -1,7 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+#include <GameplayTagContainer.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEISettings -ObjectName=OEISettingsSubsystem -FallbackName=OEISettingsSubsystem
+#include "OEISettingsSubsystem.h"
+
 #include "NotificationDurations.h"
 #include "OwSettingsSubsystem.generated.h"
 

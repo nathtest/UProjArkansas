@@ -4,7 +4,7 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PoseSnapshot -FallbackName=PoseSnapshot
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICrowdManagerRuntime -ObjectName=OEICrowdAnimInstance -FallbackName=OEICrowdAnimInstance
+#include "OEICrowdAnimInstance.h"
 #include "BipedAnimInstance.h"
 #include "OwCrowdMoverAnimInstance.generated.h"
 

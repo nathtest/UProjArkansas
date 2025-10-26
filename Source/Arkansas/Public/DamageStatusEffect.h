@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=TransformedShape -FallbackName=TransformedShape
+#include <GameplayTagContainer.h>
+#include <GameplayTagContainer.h>
+#include <TransformedShape.h>
 #include "EAOEDamageTarget.h"
 #include "EDamageBaseAmount.h"
 #include "EDamageValueType.h"

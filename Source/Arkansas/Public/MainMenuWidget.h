@@ -1,10 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIGlobalVariables -ObjectName=GlobalVariableReference -FallbackName=GlobalVariableReference
+#include <GameplayTagContainer.h>
+#include <GlobalVariableReference.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEIPlatformService -ObjectName=EOEIPlatformServiceLoginResult -FallbackName=EOEIPlatformServiceLoginResult
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEIPlatformService -ObjectName=EOEIPlatformServiceProvider -FallbackName=EOEIPlatformServiceProvider
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
+#include <LocString.h>
 #include "IndianaInterfaceUserWidget.h"
 #include "OnCreditsStartRequestedDelegate.h"
 #include "OnCreditsStopRequestedDelegate.h"

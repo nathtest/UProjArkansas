@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimInstance -FallbackName=AnimInstance
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+#include <GameplayTagContainer.h>
 #include "ThrowableAnimInstance.generated.h"
 
 class AIndianaPlayerCharacter;

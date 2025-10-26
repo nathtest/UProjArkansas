@@ -1,6 +1,8 @@
 #include "IndianaAISystem.h"
 
-UIndianaAISystem::UIndianaAISystem() {
+UIndianaAISystem::UIndianaAISystem(
+    const FObjectInitializer& ObjectInitializer)
+    : Super(ObjectInitializer) {
     this->TokenManager = NULL;
     this->SearchCoordinator = NULL;
 }

@@ -2,7 +2,8 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PoseSnapshot -FallbackName=PoseSnapshot
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICrowdManagerRuntime -ObjectName=OEICrowdAnimInstance -FallbackName=OEICrowdAnimInstance
+#include "OEICrowdAnimInstance.h"
+
 #include "CrowdPersonalityAnims.h"
 #include "TPVMinAnimInstance.h"
 #include "CrowdAnimInstance.generated.h"

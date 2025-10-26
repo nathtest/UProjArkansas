@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Box -FallbackName=Box
-//CROSS-MODULE INCLUDE V2: -ModuleName=NavigationSystem -ObjectName=RecastNavMesh -FallbackName=RecastNavMesh
+#include "NavMesh/RecastNavMesh.h"
+
 #include "IslandConnectivityData.h"
 #include "NavIslandConnection.h"
 #include "OwNavMesh.generated.h"

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIVoiceOver -ObjectName=VoiceOverComponentSetupData -FallbackName=VoiceOverComponentSetupData
+#include <VoiceOverComponentSetupData.h>
 #include "OwSpeaker.h"
 #include "AudioLogSpeaker.generated.h"
 

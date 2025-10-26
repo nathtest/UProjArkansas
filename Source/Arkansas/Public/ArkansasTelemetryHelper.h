@@ -4,7 +4,7 @@
 #include "ArkansasTelemetryHelper.generated.h"
 
 UCLASS(Blueprintable)
-class ARKANSAS_API UArkansasTelemetryHelper : public UTelemetryHelper {
+class ARKANSAS_API UArkansasTelemetryHelper : public UObject /*UTelemetryHelper*/ {
     GENERATED_BODY()
 public:
     UArkansasTelemetryHelper();

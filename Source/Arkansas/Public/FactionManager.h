@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Object -FallbackName=Object
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=EComparisonOperator -FallbackName=EComparisonOperator
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=SpeakerReference -FallbackName=SpeakerReference
+#include <EComparisonOperator.h>
+#include <SpeakerReference.h>
 #include "EBountyAdjustment.h"
 #include "EBountyLevel.h"
 #include "EBribeDifficulty.h"

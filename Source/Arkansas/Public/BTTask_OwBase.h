@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=BTTaskNode -FallbackName=BTTaskNode
+#include "BehaviorTree/BTTaskNode.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 #include "OwBaseTaskStreamingState.h"
 #include "BTTask_OwBase.generated.h"

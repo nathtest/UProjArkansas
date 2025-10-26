@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=EComparisonOperator -FallbackName=EComparisonOperator
+#include <GameplayTagContainer.h>
+#include <EComparisonOperator.h>
 #include "AttackFilterConditional.h"
 #include "ESkill.h"
 #include "AttackFilterConditional_IsWeapon.generated.h"

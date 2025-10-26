@@ -1,5 +1,7 @@
 #include "AmbientRetriggerSplineEmitterActor.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SplineComponent -FallbackName=SplineComponent
+#include "Components\SplineComponent.h"
+
 #include "AmbientRetriggerSplineEmitterComponent.h"
 
 AAmbientRetriggerSplineEmitterActor::AAmbientRetriggerSplineEmitterActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

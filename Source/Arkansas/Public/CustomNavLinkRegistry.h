@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=NavLinkAuxiliaryId -FallbackName=NavLinkAuxiliaryId
-//CROSS-MODULE INCLUDE V2: -ModuleName=NavigationSystem -ObjectName=NavRelevantComponent -FallbackName=NavRelevantComponent
+#include "NavRelevantComponent.h"
 #include "PendingNavLinkChunk.h"
 #include "CustomNavLinkRegistry.generated.h"
 
@@ -15,7 +15,7 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TArray<UCustomNavLinkBase*> CustomNavLinkPtrs;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    //UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FNavLinkAuxiliaryId CustomNavLinkAuxiliaryId;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

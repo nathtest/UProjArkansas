@@ -1,6 +1,9 @@
 #include "OEISplineEmitterActor.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SplineComponent -FallbackName=SplineComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEIWwise -ObjectName=OEIWwiseEmitterComponent -FallbackName=OEIWwiseEmitterComponent
+#include "Components\SplineComponent.h"
+#include "OEIWwiseEmitterComponent.h"
+
 
 AOEISplineEmitterActor::AOEISplineEmitterActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->RootComponent = CreateDefaultSubobject<USplineComponent>(TEXT("Spline"));

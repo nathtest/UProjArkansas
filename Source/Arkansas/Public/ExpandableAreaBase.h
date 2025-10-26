@@ -4,8 +4,9 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Margin -FallbackName=Margin
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateBrush -FallbackName=SlateBrush
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateColor -FallbackName=SlateColor
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=NamedSlotInterface -FallbackName=NamedSlotInterface
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=Widget -FallbackName=Widget
+#include "Components\NamedSlotInterface.h"
+
+#include "Components/Widget.h"
 #include "ComponentEventMCDDelegate.h"
 #include "OnExpandableAreaExpansionChangedDelegate2.h"
 #include "ExpandableAreaBase.generated.h"
@@ -19,7 +20,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     USlateWidgetStyleAsset* HeaderWidgetStyle;
     
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    //UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FExpandableAreaStyle Style;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -82,6 +83,11 @@ public:
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     bool GetIsExpanded() const;
+
+    // INamedSlotInterface
+    virtual void GetSlotNames(TArray<FName>& SlotNames) const override;
+    virtual UWidget* GetContentForSlot(FName SlotName) const override;
+    virtual void SetContentForSlot(FName SlotName, UWidget* Content) override;
     
 
     // Fix for true pure virtual functions not being implemented

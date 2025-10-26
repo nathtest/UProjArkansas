@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=EComparisonOperator -FallbackName=EComparisonOperator
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIScripting -ObjectName=ConditionalLibrary -FallbackName=ConditionalLibrary
+#include <GameplayTagContainer.h>
+#include <EComparisonOperator.h>
+#include "ConditionalLibrary.h"
 #include "EArmorSlot.h"
 #include "EGameDifficulty.h"
 #include "ERankLevel.h"

@@ -1,5 +1,6 @@
 #include "IndianaPlayerController.h"
 #include "OwCheatManager.h"
+#include "GameFramework/PlayerInput.h"
 
 AIndianaPlayerController::AIndianaPlayerController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->CheatClass = UOwCheatManager::StaticClass();

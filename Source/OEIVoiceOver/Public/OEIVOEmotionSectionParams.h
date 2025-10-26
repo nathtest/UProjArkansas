@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneFloatChannel -FallbackName=MovieSceneFloatChannel
+#include <GameplayTagContainer.h>
+#include <Channels/MovieSceneFloatChannel.h>
 #include "OEIVOEmotionSectionParams.generated.h"
 
 USTRUCT(BlueprintType)

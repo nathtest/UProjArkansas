@@ -1,6 +1,6 @@
 #include "IndianaPlayerStart.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CameraComponent -FallbackName=CameraComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CapsuleComponent -FallbackName=CapsuleComponent
+#include "Camera/CameraComponent.h"
+#include "Components\CapsuleComponent.h"
 
 AIndianaPlayerStart::AIndianaPlayerStart(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->LeftCompanion = CreateDefaultSubobject<UCapsuleComponent>(TEXT("LeftCompanion"));

@@ -1,7 +1,7 @@
 #include "TrapTrigger.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CapsuleComponent -FallbackName=CapsuleComponent
+#include "Components\CapsuleComponent.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 #include "InteractLookAtTriggerComponent.h"
 #include "InteractableComponent.h"
 #include "OwNavModifierComponent.h"

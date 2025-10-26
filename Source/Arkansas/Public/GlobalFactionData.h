@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=ETeamAttitude -FallbackName=ETeamAttitude
+#include "GenericTeamAgentInterface.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=StaticMaterial -FallbackName=StaticMaterial
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=SpeakerReference -FallbackName=SpeakerReference
+#include <SpeakerReference.h>
 #include "BountyAdjustmentsForInteger.h"
 #include "BountyAdjustmentsForOclDifficulty.h"
 #include "BountyForStandingType.h"

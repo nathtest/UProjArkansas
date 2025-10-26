@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimNotifyState -FallbackName=AnimNotifyState
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+#include "Animation/AnimNotifies/AnimNotifyState.h"
+#include <GameplayTagContainer.h>
 #include "Templates/SubclassOf.h"
 #include "AnimNotifyState_MeleeDamage.generated.h"
 

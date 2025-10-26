@@ -1,7 +1,7 @@
 #include "BroadcastEmitter.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkComponent -FallbackName=AkComponent
+#include <AkComponent.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 
 ABroadcastEmitter::ABroadcastEmitter(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("SceneComponent"));

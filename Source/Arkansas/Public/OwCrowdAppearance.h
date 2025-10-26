@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICrowdManagerRuntime -ObjectName=OEICrowdAppearance -FallbackName=OEICrowdAppearance
+#include <GameplayTagContainer.h>
+#include "OEICrowdAppearance.h"
+
 #include "OwCrowdAppearanceEntry.h"
 #include "OwCrowdAppearanceEyeColor.h"
 #include "OwCrowdAppearanceHairColor.h"

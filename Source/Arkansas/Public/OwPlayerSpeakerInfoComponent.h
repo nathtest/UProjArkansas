@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=EOEIGender -FallbackName=EOEIGender
+#include <EOEIGender.h>
 #include "OwSpeakerInfoComponent.h"
 #include "OwPlayerSpeakerInfoComponent.generated.h"
 

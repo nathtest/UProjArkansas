@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AnimNotify -FallbackName=AnimNotify
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ChatterEventReference -FallbackName=ChatterEventReference
+#include <ChatterEventReference.h>
+
 #include "AnimNotify_PlayChatter.generated.h"
 
 class UAkAudioEvent;

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIGlobalVariables -ObjectName=GlobalVariableReference -FallbackName=GlobalVariableReference
+#include <GlobalVariableReference.h>
 #include "GlobalVariablePair.generated.h"
 
 USTRUCT(BlueprintType)

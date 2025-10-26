@@ -1,5 +1,5 @@
 #include "BroadcastActor.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkComponent -FallbackName=AkComponent
+#include <AkComponent.h>
 
 ABroadcastActor::ABroadcastActor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->RootComponent = CreateDefaultSubobject<UAkComponent>(TEXT("VoiceOverFaceFXExternalAudio"));

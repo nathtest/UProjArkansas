@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=FloatRange -FallbackName=FloatRange
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICinematics -ObjectName=OEICineFPVPresentationMode -FallbackName=OEICineFPVPresentationMode
+#include "OEICineFPVPresentationMode.h"
+
 #include "EPresentationModeCameraFadeState.h"
 #include "EPresentationModeZoomReferenceMode.h"
 #include "PresentationModeFadeSettings.h"
@@ -75,10 +76,10 @@ public:
     UOwFPVPresentationMode();
 
     UFUNCTION(BlueprintCallable)
-    static void SetPresentationModeBaseCameraShakeEnabled(const AIndianaPlayerCharacter*& Player, bool bEnabled, float BlendTime);
+    static void SetPresentationModeBaseCameraShakeEnabled(const AIndianaPlayerCharacter* Player, bool bEnabled, float BlendTime);
     
     UFUNCTION(BlueprintCallable)
-    static void SetFPVPresentationModeCinematicShotEnabled(const AIndianaPlayerCharacter*& Player, bool bEnabled, float BlendTime);
+    static void SetFPVPresentationModeCinematicShotEnabled(const AIndianaPlayerCharacter* Player, bool bEnabled, float BlendTime);
     
 protected:
     UFUNCTION(BlueprintCallable)

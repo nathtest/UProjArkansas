@@ -1,5 +1,5 @@
 #include "Encounter.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 #include "AIGroupBehaviorInstanceKitComponent.h"
 #include "EncounterComponent.h"
 

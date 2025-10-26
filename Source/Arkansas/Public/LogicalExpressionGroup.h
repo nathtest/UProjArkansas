@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIScripting -ObjectName=ELogicalOperator -FallbackName=ELogicalOperator
+#include <ELogicalOperator.h>
 #include "LogicalExpression.h"
 #include "LogicalExpressionGroup.generated.h"
 

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=GameMode -FallbackName=GameMode
+#include "GameFramework/GameMode.h"
 #include "Templates/SubclassOf.h"
 #include "OwGameMode.generated.h"
 

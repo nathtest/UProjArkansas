@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=AIDataProviderFloatValue -FallbackName=AIDataProviderFloatValue
+#include <DataProviders/AIDataProvider.h>
 #include "EnvQueryTest_Cover.h"
 #include "Templates/SubclassOf.h"
 #include "EnvQueryTest_PreferredCover.generated.h"

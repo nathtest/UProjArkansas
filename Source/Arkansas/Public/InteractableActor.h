@@ -1,9 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=AnimationProxyResponderInterface -FallbackName=AnimationProxyResponderInterface
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=PropAnimationPlayer -FallbackName=PropAnimationPlayer
+#include <GameplayTagContainer.h>
+#include "AnimationProxyResponderInterface.h"
+
+#include <PropAnimationPlayer.h>
 #include "EInteractionType.h"
 #include "InteractPayload.h"
 #include "InteractionDescription.h"
@@ -63,6 +64,9 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnAnimNotifyEvent OnAnimNotifyEvent;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
     
 protected:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

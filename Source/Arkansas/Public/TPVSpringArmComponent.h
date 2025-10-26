@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SpringArmComponent -FallbackName=SpringArmComponent
+#include "GameFramework/SpringArmComponent.h"
 #include "TPVAsyncWhiskerSetupTickFunction.h"
 #include "TPVAsyncWhiskerTraceTickFunction.h"
 #include "TPVSpringArmComponent.generated.h"

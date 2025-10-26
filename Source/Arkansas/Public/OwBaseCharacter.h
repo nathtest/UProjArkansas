@@ -1,9 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=GenericTeamAgentInterface -FallbackName=GenericTeamAgentInterface
+#include "GenericTeamAgentInterface.h"
+
+
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Character -FallbackName=Character
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+#include "GameFrameWork\Character.h"
+
+#include <GameplayTagContainer.h>
 #include "PropComponents.h"
 #include "Templates/SubclassOf.h"
 #include "OwBaseCharacter.generated.h"

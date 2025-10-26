@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneSection -FallbackName=MovieSceneSection
+#include "MovieSceneSection.h"
 #include "MovieSceneAnimProxySectionData.h"
 #include "MovieSceneAnimProxySection.generated.h"
 

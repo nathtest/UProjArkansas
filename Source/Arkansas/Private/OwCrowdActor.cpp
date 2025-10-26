@@ -2,6 +2,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EAutoPossessAI -FallbackName=EAutoPossessAI
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ESpawnActorCollisionHandlingMethod -FallbackName=ESpawnActorCollisionHandlingMethod
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEICharacterCustomization -ObjectName=OEICCSkeletalMeshComponent -FallbackName=OEICCSkeletalMeshComponent
+#include "OEICCSkeletalMeshComponent.h"
+
 #include "CrowdMovementComponent.h"
 #include "LocomotionLogicComponent.h"
 

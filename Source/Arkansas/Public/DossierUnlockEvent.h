@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIScripting -ObjectName=ScriptEvent -FallbackName=ScriptEvent
+#include "ScriptEvent.h"
 #include "DossierEntryGroup.h"
 #include "DossierUnlockEvent.generated.h"
 

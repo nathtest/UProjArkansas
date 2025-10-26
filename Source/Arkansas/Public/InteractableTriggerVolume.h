@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TriggerVolume -FallbackName=TriggerVolume
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=AnimationProxyResponderInterface -FallbackName=AnimationProxyResponderInterface
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=PropAnimationPlayer -FallbackName=PropAnimationPlayer
+#include "Engine/TriggerVolume.h"
+#include "AnimationProxyResponderInterface.h"
+#include <PropAnimationPlayer.h>
 #include "EInteractionType.h"
 #include "InteractPayload.h"
 #include "InteractionDescription.h"

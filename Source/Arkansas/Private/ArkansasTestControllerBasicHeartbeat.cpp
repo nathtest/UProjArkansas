@@ -1,6 +1,7 @@
 #include "ArkansasTestControllerBasicHeartbeat.h"
 
-UArkansasTestControllerBasicHeartbeat::UArkansasTestControllerBasicHeartbeat() {
+UArkansasTestControllerBasicHeartbeat::UArkansasTestControllerBasicHeartbeat(const FObjectInitializer& ObjectInitializer)
+    : Super(ObjectInitializer) {
 }
 
 

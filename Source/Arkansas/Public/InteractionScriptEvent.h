@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIScripting -ObjectName=ScriptEvent -FallbackName=ScriptEvent
+#include <GameplayTagContainer.h>
+#include "ScriptEvent.h"
 #include "InteractionScriptEvent.generated.h"
 
 UCLASS(Blueprintable, CollapseCategories, EditInlineNew)

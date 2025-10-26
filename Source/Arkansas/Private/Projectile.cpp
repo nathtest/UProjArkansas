@@ -1,6 +1,8 @@
 #include "Projectile.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SphereComponent -FallbackName=SphereComponent
+#include "Components\SphereComponent.h"
+
 #include "HealthComponent.h"
 #include "IndianaProjMovementComponent.h"
 

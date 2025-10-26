@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=AnimationProxyResponderInterface -FallbackName=AnimationProxyResponderInterface
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=PropAnimationPlayer -FallbackName=PropAnimationPlayer
+#include "AnimationProxyResponderInterface.h"
+#include <PropAnimationPlayer.h>
 #include "CycleBehavior.h"
 #include "EInteractionType.h"
 #include "InteractPayload.h"
@@ -93,6 +93,8 @@ public:
     UFUNCTION(BlueprintCallable)
     bool CanInteract(AIndianaCharacter* Initiator, const FInteractPayload& Payload) const;
     
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
 
     // Fix for true pure virtual functions not being implemented
 };

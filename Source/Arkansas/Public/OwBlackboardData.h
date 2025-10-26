@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=BlackboardData -FallbackName=BlackboardData
+#include "BehaviorTree/BlackboardData.h"
+
 #include "BlackboardEntryConfig.h"
 #include "OwBlackboardData.generated.h"
 

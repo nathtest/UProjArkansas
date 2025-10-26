@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
+#include <LocString.h>
 #include "EWorkbenchState.h"
 #include "IndianaUserWidget.h"
 #include "LandingPageButtonWidget.generated.h"

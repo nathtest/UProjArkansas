@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=LogicalExpressionBaseDataAsset -FallbackName=LogicalExpressionBaseDataAsset
+#include "Engine/LogicalExpressionBaseDataAsset.h"
+
 #include "LogicalGroupedExpression.h"
 #include "GenericLogicDataAsset.generated.h"
 

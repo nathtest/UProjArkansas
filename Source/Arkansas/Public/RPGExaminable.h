@@ -23,5 +23,8 @@ protected:
 public:
     ARPGExaminable(const FObjectInitializer& ObjectInitializer);
 
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
+
 };
 

@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HUD -FallbackName=HUD
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
+#include "GameFramework\HUD.h"
+
+#include <LocString.h>
 #include "ECheckBranches.h"
 #include "EPresentationModeCameraFadeType.h"
 #include "InteractionDescription.h"

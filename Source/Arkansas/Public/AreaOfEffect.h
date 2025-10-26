@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=TransformedShape -FallbackName=TransformedShape
+#include <TransformedShape.h>
 #include "EMeshTarget.h"
 #include "ESpellEffectTarget.h"
 #include "AreaOfEffect.generated.h"

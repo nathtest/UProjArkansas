@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=BehaviorTreeComponent -FallbackName=BehaviorTreeComponent
+#include "BehaviorTree\BehaviorTreeComponent.h"
+
 #include "AIPossessable.h"
 #include "BehaviorClassTaskMigrationData.h"
 #include "OwBehaviorTreeComponent.generated.h"

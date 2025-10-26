@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=SpeakerPlaybackStartedDynamicDelegate__DelegateSignature -FallbackName=SpeakerPlaybackStartedDynamicDelegateDelegate
+#include "SpeakerPlaybackStartedDynamicDelegateDelegate.h"
+
 #include "VoiceOverComponentSetupData.h"
 #include "VoiceOverData.h"
 #include "VoiceOverLoadFinishedDynamicDelegateDelegate.h"

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CameraComponent -FallbackName=CameraComponent
+#include "Camera/CameraComponent.h"
 #include "ParkourMove.h"
 #include "TPVCameraComponent.generated.h"
 

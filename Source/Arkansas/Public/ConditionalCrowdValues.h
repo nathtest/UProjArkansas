@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICrowdManagerRuntime -ObjectName=ECrowdDensity -FallbackName=ECrowdDensity
+#include <GameplayTagContainer.h>
+#include <ECrowdDensity.h>
 #include "LogicalExpression.h"
 #include "ConditionalCrowdValues.generated.h"
 

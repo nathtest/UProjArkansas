@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
+#include <LocString.h>
 #include "ERestrictedAreaState.h"
 #include "FactionDataRequirementPair.h"
 #include "LogicalExpression.h"
@@ -69,6 +69,9 @@ public:
     
     UFUNCTION(BlueprintCallable, BlueprintPure)
     int32 GetHighestRankRequirement() const;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
     
 };
 

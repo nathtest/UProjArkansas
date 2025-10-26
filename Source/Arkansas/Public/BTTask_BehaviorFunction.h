@@ -15,7 +15,7 @@ class ARKANSAS_API UBTTask_BehaviorFunction : public UBTTask_OwBase {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    //UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FMemberReference FunctionReference;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

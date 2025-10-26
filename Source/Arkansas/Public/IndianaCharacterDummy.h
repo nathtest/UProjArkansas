@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Character -FallbackName=Character
+#include "GameFrameWork\Character.h"
 #include "PropComponents.h"
 #include "RandomPlayerSequenceEntryNamed.h"
 #include "IndianaCharacterDummy.generated.h"

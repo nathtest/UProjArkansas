@@ -1,5 +1,5 @@
 #include "TrapGroupManager.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 
 ATrapGroupManager::ATrapGroupManager(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->ActivationType = ETrapGroupActivation::OneShot;

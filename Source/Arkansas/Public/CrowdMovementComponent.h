@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=AnimationProxyCharacterMovement -FallbackName=AnimationProxyCharacterMovement
+#include "AnimationProxyCharacterMovement.h"
 #include "OWRVOAvoidanceInterface.h"
 #include "CrowdMovementComponent.generated.h"
 

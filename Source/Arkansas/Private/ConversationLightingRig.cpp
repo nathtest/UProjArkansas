@@ -1,6 +1,6 @@
 #include "ConversationLightingRig.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SpotLightComponent -FallbackName=SpotLightComponent
+#include "Components/SpotLightComponent.h"
 
 AConversationLightingRig::AConversationLightingRig(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->RootComponent = CreateDefaultSubobject<USceneComponent>(TEXT("Root"));

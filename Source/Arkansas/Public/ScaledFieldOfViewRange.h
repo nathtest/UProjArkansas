@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICinematics -ObjectName=EOEIFieldOfViewAxis -FallbackName=EOEIFieldOfViewAxis
+#include <EOEIFieldOfViewAxis.h>
 #include "ScaledFieldOfViewRange.generated.h"
 
 USTRUCT(BlueprintType)

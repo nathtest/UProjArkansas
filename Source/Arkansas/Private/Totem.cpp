@@ -1,5 +1,6 @@
 #include "Totem.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SphereComponent -FallbackName=SphereComponent
+#include "Components\SphereComponent.h"
 
 ATotem::ATotem(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->EffectOverlapComponent = CreateDefaultSubobject<USphereComponent>(TEXT("EffectOverlapComponent"));

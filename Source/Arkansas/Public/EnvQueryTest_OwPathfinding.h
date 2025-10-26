@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=AIDataProviderFloatValue -FallbackName=AIDataProviderFloatValue
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EnvQueryTest_Pathfinding -FallbackName=EnvQueryTest_Pathfinding
+#include <DataProviders/AIDataProvider.h>
+#include "EnvironmentQuery/Tests/EnvQueryTest_Pathfinding.h"
 #include "EnvQueryTest_OwPathfinding.generated.h"
 
 UCLASS(Blueprintable)

@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CheatManager -FallbackName=CheatManager
+#include "GameFrameWork\CheatManager.h"
+
 #include "ESkillDifficultyTier.h"
 #include "OwCheatManager.generated.h"
 

@@ -16,10 +16,10 @@ UOwFPVPresentationMode::UOwFPVPresentationMode() {
     this->ConversationFadeInstance = NULL;
 }
 
-void UOwFPVPresentationMode::SetPresentationModeBaseCameraShakeEnabled(const AIndianaPlayerCharacter*& Player, bool bEnabled, float BlendTime) {
+void UOwFPVPresentationMode::SetPresentationModeBaseCameraShakeEnabled(const AIndianaPlayerCharacter* Player, bool bEnabled, float BlendTime) {
 }
 
-void UOwFPVPresentationMode::SetFPVPresentationModeCinematicShotEnabled(const AIndianaPlayerCharacter*& Player, bool bEnabled, float BlendTime) {
+void UOwFPVPresentationMode::SetFPVPresentationModeCinematicShotEnabled(const AIndianaPlayerCharacter* Player, bool bEnabled, float BlendTime) {
 }
 
 void UOwFPVPresentationMode::OnViewTargetChanged(APlayerController* PlayerController, AActor* OldViewTarget, AActor* NewViewTarget) {

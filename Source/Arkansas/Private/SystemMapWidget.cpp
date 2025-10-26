@@ -1,7 +1,7 @@
 #include "SystemMapWidget.h"
 
 USystemMapWidget::USystemMapWidget() {
-    this->bIsFocusable = true;
+    //this->bIsFocusable = true;
     this->SelectionWidgetClass = NULL;
     this->EntryWidgetClass = NULL;
     this->QuestSortingData = NULL;

@@ -1,0 +1,14 @@
+# Visual Studio temporary files
+.vs/
+
+# Unreal Engine generated folders
+Binaries/
+Build/
+Intermediate/
+Cooking/
+DerivedDataCache/
+Saved/
+.vsconfig
+Arkansas.sln
+# Ignore only files inside Content/Blueprints/Game
+Content/Blueprints/Game/*

@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EAIParamType -FallbackName=EAIParamType
+#include <EnvironmentQuery/EnvQueryTypes.h>
+
 #include "AISelector_EQSParameter.h"
 #include "AIDynamicParam_IndianaBase.generated.h"
 

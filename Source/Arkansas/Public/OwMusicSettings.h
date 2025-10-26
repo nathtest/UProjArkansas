@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIMusic -ObjectName=OEIMusicSettings -FallbackName=OEIMusicSettings
+#include "OEIMusicSettings.h"
+
 #include "OwMusicSettings.generated.h"
 
 class UAkRtpc;

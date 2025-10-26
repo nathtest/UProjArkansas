@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=NavigationSystem -ObjectName=NavArea -FallbackName=NavArea
+#include "NavAreas/NavArea.h"
 #include "NavArea_NavLinkBase.generated.h"
 
 UCLASS(Abstract, Blueprintable)

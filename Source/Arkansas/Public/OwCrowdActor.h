@@ -1,13 +1,16 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=CrowdAgentInterface -FallbackName=CrowdAgentInterface
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EPathFollowingResult -FallbackName=EPathFollowingResult
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DamageEvent -FallbackName=DamageEvent
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=AnimationProxyOwnerInterface -FallbackName=AnimationProxyOwnerInterface
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=AnimationProxyTask -FallbackName=AnimationProxyTask
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICrowdManagerRuntime -ObjectName=CrowdCharacterData -FallbackName=CrowdCharacterData
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICrowdManagerRuntime -ObjectName=OEICrowdCharacter -FallbackName=OEICrowdCharacter
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ChatterEventReference -FallbackName=ChatterEventReference
+#include "Navigation\CrowdAgentInterface.h"
+
+#include "Navigation/PathFollowingComponent.h"
+
+#include "Engine\DamageEvents.h"
+#include "AnimationProxyOwnerInterface.h"
+#include <AnimationProxyTask.h>
+#include <CrowdCharacterData.h>
+
+#include "OEICrowdCharacter.h"
+#include <ChatterEventReference.h>
 #include "OwBaseCharacter.h"
 #include "OwSpeaker.h"
 #include "OwCrowdActor.generated.h"

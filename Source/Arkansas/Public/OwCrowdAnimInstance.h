@@ -1,11 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=AnimationProxyRuntime -FallbackName=AnimationProxyRuntime
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=BodyIdle -FallbackName=BodyIdle
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=FacialIdle -FallbackName=FacialIdle
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimationRuntime -ObjectName=OEIAnimInstance -FallbackName=OEIAnimInstance
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICrowdManagerRuntime -ObjectName=OEIMergedCrowdAnimInstance -FallbackName=OEIMergedCrowdAnimInstance
+#include <GameplayTagContainer.h>
+#include <AnimationProxyRuntime.h>
+#include <BodyIdle.h>
+#include <FacialIdle.h>
+#include "OEIAnimInstance.h"
+#include "OEIMergedCrowdAnimInstance.h"
+
 #include "OwCrowdAnimInstance.generated.h"
 
 UCLASS(Blueprintable, NonTransient)

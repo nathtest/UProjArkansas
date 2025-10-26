@@ -1,5 +1,5 @@
 #include "POIVolume.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 
 APOIVolume::APOIVolume(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->SkillDifficultyTierOverride = ESkillDifficultyTier::Invalid;

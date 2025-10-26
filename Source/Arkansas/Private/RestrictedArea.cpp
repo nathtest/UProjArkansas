@@ -1,5 +1,5 @@
 #include "RestrictedArea.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 #include "RestrictedAreaComponent.h"
 
 ARestrictedArea::ARestrictedArea(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

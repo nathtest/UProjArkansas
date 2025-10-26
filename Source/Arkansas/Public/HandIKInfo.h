@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ComponentReference -FallbackName=ComponentReference
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=EIKGoalTarget -FallbackName=EIKGoalTarget
+#include <EIKGoalTarget.h>
 #include "HandIKInfo.generated.h"
 
 class UPrimitiveComponent;

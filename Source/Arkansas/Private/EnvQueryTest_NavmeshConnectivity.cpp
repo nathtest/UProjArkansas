@@ -1,5 +1,5 @@
 #include "EnvQueryTest_NavmeshConnectivity.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EnvQueryContext_Querier -FallbackName=EnvQueryContext_Querier
+#include "EnvironmentQuery/Contexts/EnvQueryContext_Querier.h"
 
 UEnvQueryTest_NavmeshConnectivity::UEnvQueryTest_NavmeshConnectivity() {
     this->TestPurpose = EEnvTestPurpose::Filter;

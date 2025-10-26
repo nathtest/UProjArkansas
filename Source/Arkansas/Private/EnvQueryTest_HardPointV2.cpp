@@ -1,5 +1,5 @@
 #include "EnvQueryTest_HardPointV2.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EnvQueryContext_Querier -FallbackName=EnvQueryContext_Querier
+#include "EnvironmentQuery/Contexts/EnvQueryContext_Querier.h"
 
 UEnvQueryTest_HardPointV2::UEnvQueryTest_HardPointV2() {
     this->TestPurpose = EEnvTestPurpose::Filter;

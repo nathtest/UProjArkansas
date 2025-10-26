@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=ETeamAttitude -FallbackName=ETeamAttitude
+#include "GenericTeamAgentInterface.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIScripting -ObjectName=ScriptLibrary -FallbackName=ScriptLibrary
+#include <GameplayTagContainer.h>
+#include "ScriptLibrary.h"
 #include "EArithmeticOperation.h"
 #include "EBountyAdjustment.h"
 #include "EBribeDifficulty.h"

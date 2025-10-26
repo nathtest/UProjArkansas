@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=AnimationProxyPositionalData -FallbackName=AnimationProxyPositionalData
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=BodyIdle -FallbackName=BodyIdle
+#include <GameplayTagContainer.h>
+#include <AnimationProxyPositionalData.h>
+#include <BodyIdle.h>
 #include "SubStateData.h"
 #include "AnimProxySet.generated.h"
 

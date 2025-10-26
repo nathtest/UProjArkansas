@@ -1,6 +1,6 @@
 #include "BroadcastRouter.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkComponent -FallbackName=AkComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include <AkComponent.h>
+#include "ObsidianIDComponent.h"
 
 ABroadcastRouter::ABroadcastRouter(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->bShouldSaveGameState = true;

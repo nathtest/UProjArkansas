@@ -1,22 +1,30 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=AISightTargetInterface -FallbackName=AISightTargetInterface
+#include "Perception\AISightTargetInterface.h"
+
+
+
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneObjectBindingID -FallbackName=MovieSceneObjectBindingID
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAimAssist -ObjectName=AimAdhesionInterface -FallbackName=AimAdhesionInterface
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=AnimationProxyOwnerInterface -FallbackName=AnimationProxyOwnerInterface
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=AnimationProxyTask -FallbackName=AnimationProxyTask
+#include <GameplayTagContainer.h>
+#include <MovieSceneObjectBindingID.h>
+#include "AimAdhesionInterface.h"
+#include "AnimationProxyOwnerInterface.h"
+#include <AnimationProxyTask.h>
+
+
+
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=EProxyTaskInterruptType -FallbackName=EProxyTaskInterruptType
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=EProxyTaskState -FallbackName=EProxyTaskState
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICinematics -ObjectName=OEICinematicsActor -FallbackName=OEICinematicsActor
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICinematics -ObjectName=StageMarkUser -FallbackName=StageMarkUser
+#include "OEICinematicsActor.h"
+
+
+#include "StageMarkUser.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=EBoolResult -FallbackName=EBoolResult
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=SpeakerReference -FallbackName=SpeakerReference
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIGlobalVariables -ObjectName=GlobalVariableReference -FallbackName=GlobalVariableReference
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
+#include <SpeakerReference.h>
+#include <GlobalVariableReference.h>
+#include <LocString.h>
 #include "AimTargets.h"
 #include "CauseDamageInfo.h"
 #include "CharacterDeathDelegate.h"
@@ -53,6 +61,7 @@
 #include "StatusEffectTarget.h"
 #include "Templates/SubclassOf.h"
 #include "TrackedSpawn.h"
+
 #include "IndianaCharacter.generated.h"
 
 class AActor;
@@ -140,6 +149,9 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnAnimProxyUseEnd OnAnimProxyUseEnd;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
     
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

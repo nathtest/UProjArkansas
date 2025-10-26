@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TriggerData -FallbackName=TriggerData
+#include <Engine/TriggerData.h>
 #include "OnLookedAtEventDelegate.h"
 #include "LookAtTrigger.generated.h"
 
@@ -14,6 +14,9 @@ class ALookAtTrigger : public AActor {
 public:
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FOnLookedAtEvent OnLookedAtEvent;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
     
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

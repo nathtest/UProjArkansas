@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneNameableTrack -FallbackName=MovieSceneNameableTrack
-//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneTrackTemplateProducer -FallbackName=MovieSceneTrackTemplateProducer
+#include "MovieSceneNameableTrack.h"
+#include "Compilation/IMovieSceneTrackTemplateProducer.h"
 #include "OEIVoiceOverTrack.generated.h"
 
 class UMovieSceneSection;
@@ -16,6 +16,14 @@ private:
     
 public:
     UOEIVoiceOverTrack();
+    // --- Required Overrides ---
+    virtual const TArray<UMovieSceneSection*>& GetAllSections() const override;
+    virtual void RemoveAllAnimationData() override;
+    virtual bool HasSection(const UMovieSceneSection& Section) const override;
+    virtual void RemoveSection(UMovieSceneSection& Section) override;
+    virtual bool IsEmpty() const override;
+
+    virtual FMovieSceneEvalTemplatePtr CreateTemplateForSection(const UMovieSceneSection& InSection) const override;
 
 
     // Fix for true pure virtual functions not being implemented

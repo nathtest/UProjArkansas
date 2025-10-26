@@ -5,6 +5,6 @@
 UENUM(BlueprintType)
 enum class ETrackingRegionLockBehavior : uint8 {
     MaintainCurrentOrientation = 1,
-    ResetOrientation,
+    ResetOrientation = 0,
 };
 

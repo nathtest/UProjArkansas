@@ -1,4 +1,5 @@
 #include "AIDetectionComponent.h"
+#include "Perception\AIPerceptionTypes.h"
 
 UAIDetectionComponent::UAIDetectionComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->ComponentTags.AddDefaulted(1);

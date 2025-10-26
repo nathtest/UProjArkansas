@@ -184,6 +184,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     void SetInteractTarget(bool bIsTarget, UInteractableComponent* Interactable);
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
     
 protected:
     UFUNCTION(BlueprintCallable)

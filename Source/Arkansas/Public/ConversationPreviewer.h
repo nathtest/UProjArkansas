@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ConversationNavigator -FallbackName=ConversationNavigator
+#include <ConversationNavigator.h>
 #include "ConversationPreviewer.generated.h"
 
 USTRUCT(BlueprintType)

@@ -3,6 +3,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Box -FallbackName=Box
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=NavRelevantInterface -FallbackName=NavRelevantInterface
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=NavigationDataChunkActor -FallbackName=NavigationDataChunkActor
+#include "WorldPartition/NavigationData/NavigationDataChunkActor.h"
+
 #include "OwNavigationDataChunkActor.generated.h"
 
 class UNavMeshCustomNavLinkCollection;

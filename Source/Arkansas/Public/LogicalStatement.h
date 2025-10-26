@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIGlobalVariables -ObjectName=GlobalVariableConditional -FallbackName=GlobalVariableConditional
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIScripting -ObjectName=ELogicalOperator -FallbackName=ELogicalOperator
+#include <GlobalVariableConditional.h>
+#include <ELogicalOperator.h>
+
 #include "BlueprintFunctionLibraryConditional.h"
 #include "CompanionStateConditional.h"
 #include "DataAssetConditional.h"

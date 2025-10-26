@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=RotatingMovementComponent -FallbackName=RotatingMovementComponent
+#include "GameFramework/RotatingMovementComponent.h"
+
 #include "OwRotatingMovementComponent.generated.h"
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

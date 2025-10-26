@@ -1,6 +1,8 @@
 #include "CineCombatSequencePlayer.h"
 
-UCineCombatSequencePlayer::UCineCombatSequencePlayer() {
+UCineCombatSequencePlayer::UCineCombatSequencePlayer(
+    const FObjectInitializer& ObjectInitializer)
+    : Super(ObjectInitializer) {
 }
 
 

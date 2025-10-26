@@ -1,5 +1,5 @@
 #include "CoverNodeGenerationVolume.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 #include "NavDataGenerationVolumeComponent.h"
 
 ACoverNodeGenerationVolume::ACoverNodeGenerationVolume(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

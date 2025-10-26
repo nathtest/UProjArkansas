@@ -1,5 +1,7 @@
 #include "OwBaseCharacter.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
+#include "Components\SceneComponent.h"
+
 #include "Templates/SubclassOf.h"
 
 AOwBaseCharacter::AOwBaseCharacter(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

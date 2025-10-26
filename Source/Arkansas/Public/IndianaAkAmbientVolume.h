@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TriggerVolume -FallbackName=TriggerVolume
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIWwise -ObjectName=OEIWwiseAudioState -FallbackName=OEIWwiseAudioState
+#include "Engine/TriggerVolume.h"
+#include <OEIWwiseAudioState.h>
 #include "IndianaAkAmbientVolume.generated.h"
 
 class AActor;

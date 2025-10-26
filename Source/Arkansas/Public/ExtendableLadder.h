@@ -11,7 +11,7 @@ class USplineComponent;
 class UStaticMeshComponent;
 
 UCLASS(Abstract, Blueprintable)
-class AExtendableLadder : public ALadder, public IPrefabSupportInterface {
+class AExtendableLadder : public ALadder/*, public IPrefabSupportInterface*/ {
     GENERATED_BODY()
 public:
 protected:

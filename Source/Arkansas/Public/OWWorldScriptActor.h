@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIWorldScriptActor -ObjectName=OEIWorldScriptActor -FallbackName=OEIWorldScriptActor
+#include "OEIWorldScriptActor.h"
+
 #include "OWWorldScriptActor.generated.h"
 
 class UObsidianIDComponent;

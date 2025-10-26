@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
+#include <LocString.h>
 #include "ARCC_BasePageWidget.h"
 #include "ARCC_SkillEntryData.h"
 #include "EARCC_SkillSelectionStep.h"

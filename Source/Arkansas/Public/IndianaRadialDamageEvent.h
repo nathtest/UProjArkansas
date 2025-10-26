@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=RadialDamageEvent -FallbackName=RadialDamageEvent
+#include "Engine\DamageEvents.h"
+
 #include "IndianaRadialDamageEvent.generated.h"
 
 USTRUCT(BlueprintType)

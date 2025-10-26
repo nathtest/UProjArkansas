@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ConversationNavigator -FallbackName=ConversationNavigator
+#include <ConversationNavigator.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=FlowChartNode -FallbackName=FlowChartNode
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=SpeakerReference -FallbackName=SpeakerReference
+#include <SpeakerReference.h>
 #include "RenderTargetDisplayInterface.h"
 #include "RenderTargetActor.generated.h"
 

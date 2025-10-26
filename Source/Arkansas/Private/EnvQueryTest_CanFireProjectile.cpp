@@ -1,5 +1,5 @@
 #include "EnvQueryTest_CanFireProjectile.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EnvQueryContext_Querier -FallbackName=EnvQueryContext_Querier
+#include "EnvironmentQuery/Contexts/EnvQueryContext_Querier.h"
 
 UEnvQueryTest_CanFireProjectile::UEnvQueryTest_CanFireProjectile() {
     this->TestPurpose = EEnvTestPurpose::Filter;

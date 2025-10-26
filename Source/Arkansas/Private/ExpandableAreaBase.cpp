@@ -19,4 +19,17 @@ bool UExpandableAreaBase::GetIsExpanded() const {
     return false;
 }
 
+void UExpandableAreaBase::GetSlotNames(TArray<FName>& SlotNames) const
+{
+}
+
+UWidget* UExpandableAreaBase::GetContentForSlot(FName SlotName) const
+{
+    return nullptr;
+}
+
+void UExpandableAreaBase::SetContentForSlot(FName SlotName, UWidget* Content)
+{
+}
+
 

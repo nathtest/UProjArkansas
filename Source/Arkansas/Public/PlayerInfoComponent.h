@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=EQuestType -FallbackName=EQuestType
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIGlobalVariables -ObjectName=GlobalVariableReference -FallbackName=GlobalVariableReference
+#include <GameplayTagContainer.h>
+#include <EQuestType.h>
+#include <GlobalVariableReference.h>
 #include "CharacterInfoComponent.h"
 #include "ECreatureXPType.h"
 #include "EPointOfInterestXPType.h"

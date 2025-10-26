@@ -1,5 +1,5 @@
 #include "OwMainMenuPawn.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 #include "OwPlayerSpeakerInfoComponent.h"
 
 AOwMainMenuPawn::AOwMainMenuPawn(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

@@ -1,5 +1,5 @@
 #include "Intercom.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkComponent -FallbackName=AkComponent
+#include <AkComponent.h>
 
 AIntercom::AIntercom(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->AkComponent = CreateDefaultSubobject<UAkComponent>(TEXT("Ak"));

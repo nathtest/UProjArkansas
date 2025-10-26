@@ -1,8 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=QuestReference -FallbackName=QuestReference
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIGlobalVariables -ObjectName=GlobalVariableReference -FallbackName=GlobalVariableReference
+#include <GameplayTagContainer.h>
+#include <QuestReference.h>
+#include <GlobalVariableReference.h>
 #include "CharacterInventoryComponent.h"
 #include "LootOnBreakdown.h"
 #include "OnCraftOrBuyAmmoDelegate.h"

@@ -91,6 +91,9 @@ protected:
 public:
     APickup(const FObjectInitializer& ObjectInitializer);
 
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
+
 protected:
     UFUNCTION(BlueprintCallable)
     void ShutdownDropPhysics(bool bUpdateTransforms);

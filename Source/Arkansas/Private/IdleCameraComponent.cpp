@@ -1,5 +1,5 @@
 #include "IdleCameraComponent.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CameraComponent -FallbackName=CameraComponent
+#include "Camera/CameraComponent.h"
 
 UIdleCameraComponent::UIdleCameraComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->ComponentTags.AddDefaulted(1);

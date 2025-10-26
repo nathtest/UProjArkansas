@@ -1,5 +1,5 @@
 #include "CharacterSpawner.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 #include "CharacterSpawnerVizComponent.h"
 
 ACharacterSpawner::ACharacterSpawner(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

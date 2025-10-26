@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=EComparisonOperator -FallbackName=EComparisonOperator
+#include <EComparisonOperator.h>
 #include "BTDecorator_OwConditionalBase.h"
 #include "ETargetInfoRelativeLocation.h"
 #include "BTDecorator_TargetDistanceCheck.generated.h"

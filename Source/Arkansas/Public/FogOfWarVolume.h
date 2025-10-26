@@ -34,6 +34,10 @@ public:
 
     UFUNCTION(BlueprintCallable)
     void UpdateFogOfWar();
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
+    
     
 };
 

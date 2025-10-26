@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIVoiceOver -ObjectName=VoiceOverComponentSetupData -FallbackName=VoiceOverComponentSetupData
+#include <VoiceOverComponentSetupData.h>
 #include "EInteractionType.h"
 #include "InteractPayload.h"
 #include "InteractionDescription.h"
@@ -69,6 +69,8 @@ public:
     UFUNCTION(BlueprintCallable)
     bool CanInteract(AIndianaCharacter* Initiator, const FInteractPayload& Payload) const;
     
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
 
     // Fix for true pure virtual functions not being implemented
 };

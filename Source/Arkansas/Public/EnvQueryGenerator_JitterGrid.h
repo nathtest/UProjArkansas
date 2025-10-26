@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=AIDataProviderFloatValue -FallbackName=AIDataProviderFloatValue
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EnvQueryGenerator_ProjectedPoints -FallbackName=EnvQueryGenerator_ProjectedPoints
+#include <DataProviders/AIDataProvider.h>
+#include "EnvironmentQuery/Generators/EnvQueryGenerator_ProjectedPoints.h"
 #include "Templates/SubclassOf.h"
 #include "EnvQueryGenerator_JitterGrid.generated.h"
 

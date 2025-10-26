@@ -1,8 +1,8 @@
 #include "Trap.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkComponent -FallbackName=AkComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CapsuleComponent -FallbackName=CapsuleComponent
+#include <AkComponent.h>
+#include "Components\CapsuleComponent.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 #include "InteractLookAtTriggerComponent.h"
 
 ATrap::ATrap(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

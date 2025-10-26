@@ -1,10 +1,16 @@
 #include "Rift.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BoxComponent -FallbackName=BoxComponent
+#include "Components/BoxComponent.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CameraShakeSourceComponent -FallbackName=CameraShakeSourceComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=PostProcessComponent -FallbackName=PostProcessComponent
+#include "Camera\CameraShakeSourceComponent.h"
+
+#include "Components\PostProcessComponent.h"
+#include "Components\SphereComponent.h"
+
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SphereComponent -FallbackName=SphereComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=Niagara -ObjectName=NiagaraComponent -FallbackName=NiagaraComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIWwise -ObjectName=OEIWwiseAmbientEmitterComponent -FallbackName=OEIWwiseAmbientEmitterComponent
+#include "NiagaraComponent.h"
+
+#include "OEIWwiseAmbientEmitterComponent.h"
 #include "OwAnimationProxyComponent.h"
 #include "OwNavModifierComponent.h"
 

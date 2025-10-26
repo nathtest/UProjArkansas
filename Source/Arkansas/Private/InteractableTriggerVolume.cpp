@@ -1,7 +1,7 @@
 #include "InteractableTriggerVolume.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=AnimationProxyComponent -FallbackName=AnimationProxyComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "AnimationProxyComponent.h"
+#include "ObsidianIDComponent.h"
 #include "InteractableComponent.h"
 
 AInteractableTriggerVolume::AInteractableTriggerVolume(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

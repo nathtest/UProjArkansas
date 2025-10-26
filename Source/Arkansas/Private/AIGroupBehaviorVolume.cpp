@@ -1,5 +1,5 @@
 #include "AIGroupBehaviorVolume.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 #include "AIGroupBehaviorInstanceKitComponent.h"
 
 AAIGroupBehaviorVolume::AAIGroupBehaviorVolume(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

@@ -2,7 +2,9 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=NavAgentInterface -FallbackName=NavAgentInterface
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEICinematics -ObjectName=StageMarkActor -FallbackName=StageMarkActor
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ConversationReference -FallbackName=ConversationReference
+#include "StageMarkActor.h"
+
+#include "ConversationReference.h"
 #include "OwStageMarkActor.generated.h"
 
 class AOwStageMarkActor;

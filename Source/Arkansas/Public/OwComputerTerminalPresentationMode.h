@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICinematics -ObjectName=OEICineShotPresentationMode -FallbackName=OEICineShotPresentationMode
+#include <GameplayTagContainer.h>
+#include "OEICineShotPresentationMode.h"
+
 #include "ComputerTerminalTransitionData.h"
 #include "OwComputerTerminalPresentationMode.generated.h"
 

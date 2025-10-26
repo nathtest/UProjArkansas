@@ -1,6 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIWwise -ObjectName=OEIWwiseAmbientEmitterComponent -FallbackName=OEIWwiseAmbientEmitterComponent
+#include "OEIWwiseAmbientEmitterComponent.h"
+
+
 #include "AmbientRetriggerEmitterComponent.generated.h"
 
 UCLASS(Blueprintable, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

@@ -1,5 +1,5 @@
 #include "AIGroupBehavior_SequencerBase.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=LevelSequence -ObjectName=LevelSequencePlayer -FallbackName=LevelSequencePlayer
+#include "LevelSequencePlayer.h"
 
 UAIGroupBehavior_SequencerBase::UAIGroupBehavior_SequencerBase() {
     this->bEnableContinuousCooking = false;
@@ -24,6 +24,16 @@ void UAIGroupBehavior_SequencerBase::Internal_OnSequenceFinished() {
 
 ULevelSequencePlayer* UAIGroupBehavior_SequencerBase::GetSequencePlayer() const {
     return NULL;
+}
+
+bool UAIGroupBehavior_SequencerBase::RetrieveBindingOverrides(const FGuid& InBindingId, FMovieSceneSequenceID InSequenceID, TArray<UObject*, TInlineAllocator<1>>& OutObjects) const
+{
+    return false;
+}
+
+UObject* UAIGroupBehavior_SequencerBase::GetInstanceData() const
+{
+    return nullptr;
 }
 
 

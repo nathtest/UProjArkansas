@@ -1,6 +1,7 @@
 #include "LookAtTrigger.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CapsuleComponent -FallbackName=CapsuleComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "Components\CapsuleComponent.h"
+
+#include "ObsidianIDComponent.h"
 
 ALookAtTrigger::ALookAtTrigger(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->RootComponent = CreateDefaultSubobject<UCapsuleComponent>(TEXT("TriggerVolume"));

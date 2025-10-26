@@ -9,10 +9,10 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=EVisibilityBasedAnimTickOption -FallbackName=EVisibilityBasedAnimTickOption
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ScalarParameterValue -FallbackName=ScalarParameterValue
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=VectorParameterValue -FallbackName=VectorParameterValue
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+#include <GameplayTagContainer.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=EBoolResult -FallbackName=EBoolResult
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ConversationReference -FallbackName=ConversationReference
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
+#include "ConversationReference.h"
+#include <LocString.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=PhysicsCore -ObjectName=EPhysicalSurface -FallbackName=EPhysicalSurface
 #include "BlueprintAssetLoadCompleteDelegate.h"
 #include "BlueprintAssetsLoadedCompleteDelegate.h"

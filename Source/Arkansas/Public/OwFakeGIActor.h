@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIWeatherSystemRuntime -ObjectName=FakeGIActor -FallbackName=FakeGIActor
+#include "FakeGIActor.h"
+
 #include "OwFakeGIActor.generated.h"
 
 UCLASS(Blueprintable)

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=SpeakerReference -FallbackName=SpeakerReference
+#include <SpeakerReference.h>
 #include "LogicalExpression.h"
 #include "SpeakerConditional.generated.h"
 

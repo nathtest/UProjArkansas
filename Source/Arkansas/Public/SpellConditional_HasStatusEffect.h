@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=EComparisonOperator -FallbackName=EComparisonOperator
+#include <EComparisonOperator.h>
 #include "SpellConditional.h"
 #include "Templates/SubclassOf.h"
 #include "SpellConditional_HasStatusEffect.generated.h"

@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=ETeamAttitude -FallbackName=ETeamAttitude
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
+#include "GenericTeamAgentInterface.h"
+#include <GameplayTagContainer.h>
 #include "EventListener.h"
 #include "Templates/SubclassOf.h"
 #include "FactionListener.generated.h"

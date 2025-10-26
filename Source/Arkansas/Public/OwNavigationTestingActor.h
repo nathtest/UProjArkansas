@@ -3,8 +3,10 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector3f -FallbackName=Vector3f
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=NavAgentSelector -FallbackName=NavAgentSelector
+#include <AI/Navigation/NavAgentSelector.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=NavigationSystem -ObjectName=NavigationTestingActor -FallbackName=NavigationTestingActor
+#include "NavigationTestingActor.h"
+
 #include "EForwardDirectionInputMode.h"
 #include "ETraverseType.h"
 #include "NavigationCost.h"
@@ -17,7 +19,7 @@ class ARKANSAS_API AOwNavigationTestingActor : public ANavigationTestingActor {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    //UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FNavAgentSelector AgentSelector;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

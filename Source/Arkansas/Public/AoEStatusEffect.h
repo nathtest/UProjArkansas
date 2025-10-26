@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=TransformedShape -FallbackName=TransformedShape
+#include <TransformedShape.h>
 #include "StatusEffect.h"
 #include "Templates/SubclassOf.h"
 #include "AoEStatusEffect.generated.h"

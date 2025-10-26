@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=LevelSequence -ObjectName=LevelSequenceCameraSettings -FallbackName=LevelSequenceCameraSettings
-//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieScenePlaybackClient -FallbackName=MovieScenePlaybackClient
+#include <LevelSequenceCameraSettings.h>
+#include <TemplateSequencePlayer.h>
+
 //CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneSequencePlaybackSettings -FallbackName=MovieSceneSequencePlaybackSettings
 #include "AIGroupBehaviorRoleSelector.h"
 #include "AIGroupBehavior_BlueprintBase.h"
@@ -58,6 +59,9 @@ protected:
     UFUNCTION(BlueprintCallable, BlueprintPure)
     ULevelSequencePlayer* GetSequencePlayer() const;
     
+    virtual bool RetrieveBindingOverrides(const FGuid& InBindingId, FMovieSceneSequenceID InSequenceID, TArray<UObject*, TInlineAllocator<1>>& OutObjects) const override;
+
+    virtual UObject* GetInstanceData() const override;
 
     // Fix for true pure virtual functions not being implemented
 };

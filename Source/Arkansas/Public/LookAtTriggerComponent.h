@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TriggerData -FallbackName=TriggerData
+#include <Engine/TriggerData.h>
 #include "ObservationGate.h"
 #include "OnLookedAtEventDelegate.h"
 #include "OnTargetedEventDelegate.h"

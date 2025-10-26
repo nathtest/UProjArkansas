@@ -61,5 +61,8 @@ protected:
 public:
     ARadioStationArea(const FObjectInitializer& ObjectInitializer);
 
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
+
 };
 

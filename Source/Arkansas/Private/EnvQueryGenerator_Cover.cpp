@@ -1,6 +1,6 @@
 #include "EnvQueryGenerator_Cover.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EnvQueryContext_Querier -FallbackName=EnvQueryContext_Querier
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EnvQueryItemType_Actor -FallbackName=EnvQueryItemType_Actor
+#include "EnvironmentQuery/Contexts/EnvQueryContext_Querier.h"
+#include "EnvironmentQuery/Items/EnvQueryItemType_Actor.h"
 
 UEnvQueryGenerator_Cover::UEnvQueryGenerator_Cover() {
     this->ItemType = UEnvQueryItemType_Actor::StaticClass();

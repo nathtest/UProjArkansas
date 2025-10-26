@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=DragDropOperation -FallbackName=DragDropOperation
+#include "Blueprint/DragDropOperation.h"
 #include "Templates/SubclassOf.h"
 #include "IndianaDragDropOperation.generated.h"
 

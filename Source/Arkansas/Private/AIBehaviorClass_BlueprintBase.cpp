@@ -1,4 +1,5 @@
 #include "AIBehaviorClass_BlueprintBase.h"
+#include "BehaviorTree\BehaviorTreeTypes.h"
 
 UAIBehaviorClass_BlueprintBase::UAIBehaviorClass_BlueprintBase() {
     this->bNeedsRestartOnResume = true;

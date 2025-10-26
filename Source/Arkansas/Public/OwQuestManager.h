@@ -1,8 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=EQuestState -FallbackName=EQuestState
+#include <EQuestState.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=QuestManager -FallbackName=QuestManager
+#include "QuestManager.h"
+
 #include "VisibleAddendumList.h"
 #include "OwQuestManager.generated.h"
 

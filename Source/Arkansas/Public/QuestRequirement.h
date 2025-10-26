@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=EQuestState -FallbackName=EQuestState
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=QuestReference -FallbackName=QuestReference
+#include <EQuestState.h>
+#include <QuestReference.h>
 #include "EEqualityComparison.h"
 #include "InteractableRequirement.h"
 #include "QuestRequirement.generated.h"

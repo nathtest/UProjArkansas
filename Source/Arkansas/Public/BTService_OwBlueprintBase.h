@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=BTService_BlueprintBase -FallbackName=BTService_BlueprintBase
+#include "BehaviorTree/Services/BTService_BlueprintBase.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EBTNodeResult -FallbackName=EBTNodeResult
 #include "OwBehaviorTreeServiceInterface.h"
 #include "BTService_OwBlueprintBase.generated.h"
@@ -15,7 +15,7 @@ public:
 
 protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
-    TEnumAsByte<EBTNodeResult::Type> ReceiveResume(AIndianaAiController* Controller);
+    EBTNodeResult::Type ReceiveResume(AIndianaAiController* AIController);
     
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)
     void ReceivePause(AIndianaAiController* Controller);

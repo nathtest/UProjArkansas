@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=NiagaraAnimNotifies -ObjectName=AnimNotifyState_TimedNiagaraEffectAdvanced -FallbackName=AnimNotifyState_TimedNiagaraEffectAdvanced
+#include "AnimNotifyState_TimedNiagaraEffect.h"
+
 #include "AnimNotifyState_MappedTimedNiagaraEffectAdvanced.generated.h"
 
 UCLASS(Abstract, Blueprintable, CollapseCategories, EditInlineNew)

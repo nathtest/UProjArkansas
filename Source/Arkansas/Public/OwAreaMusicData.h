@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEIMusic -ObjectName=BackgroundMusic -FallbackName=BackgroundMusic
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIMusic -ObjectName=OEIAreaMusicData -FallbackName=OEIAreaMusicData
+#include "OEIAreaMusicData.h"
+
 #include "OwAreaMusicData.generated.h"
 
 UCLASS(Blueprintable)

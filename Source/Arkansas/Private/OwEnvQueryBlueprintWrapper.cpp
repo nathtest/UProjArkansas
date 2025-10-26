@@ -1,6 +1,8 @@
 #include "OwEnvQueryBlueprintWrapper.h"
 
-UOwEnvQueryBlueprintWrapper::UOwEnvQueryBlueprintWrapper() {
+UOwEnvQueryBlueprintWrapper::UOwEnvQueryBlueprintWrapper(
+    const FObjectInitializer& ObjectInitializer)
+    : Super(ObjectInitializer) {
 }
 
 void UOwEnvQueryBlueprintWrapper::AbortInstance() {

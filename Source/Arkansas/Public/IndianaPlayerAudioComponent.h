@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIWwise -ObjectName=OEIWwiseEmitter -FallbackName=OEIWwiseEmitter
+#include <GameplayTagContainer.h>
+#include <OEIWwiseEmitter.h>
 #include "ECompanionCommand.h"
 #include "EDetectionType.h"
 #include "EPlayerAudioDetectionState.h"

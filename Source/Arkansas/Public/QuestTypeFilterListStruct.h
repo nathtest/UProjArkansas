@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=EQuestType -FallbackName=EQuestType
+#include <EQuestType.h>
 #include "EQuestLocation.h"
 #include "EQuestSortingOptions.h"
 #include "QuestTypeFilterListStruct.generated.h"

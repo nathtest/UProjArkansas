@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Niagara -ObjectName=NiagaraDataInterface -FallbackName=NiagaraDataInterface
+#include "NiagaraDataInterface.h"
 #include "NiagaraDataInterfaceSystemPauser.generated.h"
 
 UCLASS(Blueprintable, EditInlineNew)

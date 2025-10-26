@@ -2,8 +2,9 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICrowdManagerRuntime -ObjectName=OEICrowdManager -FallbackName=OEICrowdManager
+#include <GameplayTagContainer.h>
+#include "OEICrowdManager.h"
+
 #include "CrimResponseDataLoaded.h"
 #include "OwCrowdManager.generated.h"
 

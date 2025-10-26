@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
+#include <LocString.h>
 #include "InteractionEvent.h"
 #include "RPGInteractableRequirements.h"
 #include "RPGExaminableEvent.generated.h"

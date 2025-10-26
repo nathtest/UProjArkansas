@@ -1,5 +1,5 @@
 #include "WireBox.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkComponent -FallbackName=AkComponent
+#include <AkComponent.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
 
 AWireBox::AWireBox(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

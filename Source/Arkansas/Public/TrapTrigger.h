@@ -132,6 +132,12 @@ public:
 
     UFUNCTION(BlueprintCallable)
     void StartInteract(const FInteractionDescription& InteractionDescription);
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bAllowChildActorsToSaveGameState;
     
 protected:
     UFUNCTION(BlueprintCallable)

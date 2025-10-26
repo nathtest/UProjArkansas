@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=AISense_Hearing -FallbackName=AISense_Hearing
+#include "Perception/AISense_Hearing.h"
 #include "IndianaAISense_Hearing.generated.h"
 
 UCLASS(Blueprintable)

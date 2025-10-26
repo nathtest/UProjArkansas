@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=SpeakerReference -FallbackName=SpeakerReference
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIVoiceOver -ObjectName=VoiceOverComponentSetupData -FallbackName=VoiceOverComponentSetupData
+#include <SpeakerReference.h>
+#include <VoiceOverComponentSetupData.h>
 #include "ComputerHackInterruptedDelegate.h"
 #include "ComputerHackLoopStopDelegate.h"
 #include "ComputerHackStartDelegate.h"

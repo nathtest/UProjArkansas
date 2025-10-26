@@ -1,5 +1,5 @@
 #include "AuxBusMicrophone.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkComponent -FallbackName=AkComponent
+#include <AkComponent.h>
 
 AAuxBusMicrophone::AAuxBusMicrophone(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->SpeakerActor = NULL;

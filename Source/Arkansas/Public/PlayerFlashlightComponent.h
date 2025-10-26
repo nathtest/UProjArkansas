@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SpotLightComponent -FallbackName=SpotLightComponent
+#include "Components/SpotLightComponent.h"
 #include "ArmorOffset.h"
 #include "EArmorSlot.h"
 #include "OnPlayerFlashlightChangeDelegate.h"

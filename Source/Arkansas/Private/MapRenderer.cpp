@@ -1,6 +1,6 @@
 #include "MapRenderer.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BoxComponent -FallbackName=BoxComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CameraComponent -FallbackName=CameraComponent
+#include "Components/BoxComponent.h"
+#include "Camera/CameraComponent.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
 
 AMapRenderer::AMapRenderer(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

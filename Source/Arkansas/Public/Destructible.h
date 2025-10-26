@@ -4,7 +4,7 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=HitResult -FallbackName=HitResult
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAimAssist -ObjectName=AimAdhesionInterface -FallbackName=AimAdhesionInterface
+#include "AimAdhesionInterface.h"
 #include "DamageDescription.h"
 #include "DamageLevelScaler.h"
 #include "DamageTierScaler.h"
@@ -20,6 +20,7 @@
 #include "OwActorPoolInterface.h"
 #include "Templates/SubclassOf.h"
 #include "TrapEffectSource.h"
+
 #include "Destructible.generated.h"
 
 class UCapsuleComponent;
@@ -51,6 +52,10 @@ public:
     
     UPROPERTY(BlueprintAssignable, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FDestructibleDestroyed OnDestructibleDestroyed;
+
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
     
 protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
@@ -190,6 +195,7 @@ protected:
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     TMap<UTravelRegionData*, TSoftObjectPtr<UMaterialInterface>> RegionMaterials;
+
     
 private:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

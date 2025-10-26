@@ -34,6 +34,9 @@ protected:
 public:
     APetKennel(const FObjectInitializer& ObjectInitializer);
 
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
+
 protected:
     UFUNCTION(BlueprintCallable)
     void SelectPet(TSubclassOf<UPetData> PetData);

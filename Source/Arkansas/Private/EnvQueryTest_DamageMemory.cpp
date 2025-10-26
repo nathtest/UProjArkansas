@@ -1,5 +1,5 @@
 #include "EnvQueryTest_DamageMemory.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EnvQueryContext_Querier -FallbackName=EnvQueryContext_Querier
+#include "EnvironmentQuery/Contexts/EnvQueryContext_Querier.h"
 
 UEnvQueryTest_DamageMemory::UEnvQueryTest_DamageMemory() {
     this->TestPurpose = EEnvTestPurpose::Score;

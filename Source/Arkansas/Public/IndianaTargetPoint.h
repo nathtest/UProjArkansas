@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TargetPoint -FallbackName=TargetPoint
+#include "Engine/TargetPoint.h"
 #include "IndianaTargetPoint.generated.h"
 
 class UObsidianIDComponent;

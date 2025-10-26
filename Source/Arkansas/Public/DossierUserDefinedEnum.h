@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=UserDefinedEnum -FallbackName=UserDefinedEnum
+#include "Engine/UserDefinedEnum.h"
 #include "DossierUserDefinedEnum.generated.h"
 
 UCLASS(Blueprintable)

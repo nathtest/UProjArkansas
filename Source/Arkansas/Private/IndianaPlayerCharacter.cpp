@@ -1,5 +1,5 @@
 #include "IndianaPlayerCharacter.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=CapsuleComponent -FallbackName=CapsuleComponent
+#include "Components\CapsuleComponent.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SkeletalMeshComponent -FallbackName=SkeletalMeshComponent
 #include "AimAssistComponent.h"
@@ -68,7 +68,8 @@ AIndianaPlayerCharacter::AIndianaPlayerCharacter(const FObjectInitializer& Objec
     this->HeadsetSpeaker = NULL;
     this->InteractionInputComponent = CreateDefaultSubobject<UIndianaInputComponent>(TEXT("InteractionInput"));
     this->HitEffectIndicatorComponent = CreateDefaultSubobject<UHitEffectIndicatorComponent>(TEXT("HitEffectIndicator"));
-    this->PostProcessEffectsComponent = CreateDefaultSubobject<UOwPostProcessComponent>(TEXT("PlayerPostProcessEffectsComponent"));
+    //this->PostProcessEffectsComponent = CreateDefaultSubobject<UOwPostProcessComponent>(TEXT("PlayerPostProcessEffectsComponent"));
+    this->PostProcessEffectsComponent = nullptr;
     this->InteractionComponent = CreateDefaultSubobject<UPlayerInteractionComponent>(TEXT("InteractionComponent"));
     this->PlayerEnvironmentComponent = (UPlayerEnvironmentInteractionComponent*)EnvironmentComponent;
     this->CompanionManagerComponent = CreateDefaultSubobject<UCompanionManagerComponent>(TEXT("CompanionManager"));
@@ -114,16 +115,16 @@ AIndianaPlayerCharacter::AIndianaPlayerCharacter(const FObjectInitializer& Objec
     this->BrakingDecelerationWalkingThirdPerson = 1024.00f;
     this->BrakingFrictionThirdPerson = 0.50f;
     this->BrakingDecelerationWalkingFirstPerson = 2048.00f;
-    this->ChestTarget->SetupAttachment(CollisionDamage);
-    this->CollisionDamage->SetupAttachment(GroundOffsetComponent);
-    this->FPVCamera->SetupAttachment(FPVMesh);
-    this->FPVMesh->SetupAttachment(GroundOffsetComponent);
-    this->HeadTarget->SetupAttachment(CollisionDamage);
-    this->PostProcessEffectsComponent->SetupAttachment(RootComponent);
-    this->TPVCamera->SetupAttachment(TPVCameraBoom);
-    this->TPVCameraBoom->SetupAttachment(GroundOffsetComponent);
-    this->TPVCrouchTunnelComponent->SetupAttachment(GroundOffsetComponent);
-    this->TPVWhiskerComponent->SetupAttachment(TPVCameraBoom);
+    //this->ChestTarget->SetupAttachment(CollisionDamage);
+    //this->CollisionDamage->SetupAttachment(GroundOffsetComponent);
+    //this->FPVCamera->SetupAttachment(FPVMesh);
+    //this->FPVMesh->SetupAttachment(GroundOffsetComponent);
+    //this->HeadTarget->SetupAttachment(CollisionDamage);
+    //this->PostProcessEffectsComponent->SetupAttachment(RootComponent);
+    //this->TPVCamera->SetupAttachment(TPVCameraBoom);
+    //this->TPVCameraBoom->SetupAttachment(GroundOffsetComponent);
+    //this->TPVCrouchTunnelComponent->SetupAttachment(GroundOffsetComponent);
+    //this->TPVWhiskerComponent->SetupAttachment(TPVCameraBoom);
 }
 
 void AIndianaPlayerCharacter::WeaponFOV(float FOV, bool bOffset) {

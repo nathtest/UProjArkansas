@@ -1,4 +1,5 @@
 #include "MainMenuWidget.h"
+#include "EOEIPlatformServiceLoginResult.h"
 
 UMainMenuWidget::UMainMenuWidget() {
     this->MainMenuConversationAsset = NULL;

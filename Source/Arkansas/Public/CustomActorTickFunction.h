@@ -4,9 +4,9 @@
 #include "CustomActorTickFunction.generated.h"
 
 USTRUCT(BlueprintType)
-struct FCustomActorTickFunction : public FActorTickFunction {
+struct FCustomActorTickFunction /*:  public  FActorTickFunction */ {
     GENERATED_BODY()
 public:
-    ARKANSAS_API FCustomActorTickFunction();
+    //ARKANSAS_API FCustomActorTickFunction() = default;
 };
 

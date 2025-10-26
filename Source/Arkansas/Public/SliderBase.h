@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=EOrientation -FallbackName=EOrientation
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=Widget -FallbackName=Widget
+#include "Components/Widget.h"
 #include "ComponentEventMCDDelegate.h"
 #include "IndianaSliderStyle.h"
 #include "SliderEventMCDDelegate.h"

@@ -1,5 +1,5 @@
 #include "ComputerTerminal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkComponent -FallbackName=AkComponent
+#include <AkComponent.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=StaticMeshComponent -FallbackName=StaticMeshComponent
 
 AComputerTerminal::AComputerTerminal(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

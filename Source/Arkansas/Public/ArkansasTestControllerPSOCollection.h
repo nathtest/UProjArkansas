@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Gauntlet -ObjectName=GauntletTestController -FallbackName=GauntletTestController
+#include "GauntletTestController.h"
 #include "Templates/SubclassOf.h"
 #include "ArkansasTestControllerPSOCollection.generated.h"
 
@@ -63,7 +63,7 @@ protected:
     TArray<UPhysicalMaterial*> FakePhysicsMaterials;
     
 public:
-    UArkansasTestControllerPSOCollection();
+    UArkansasTestControllerPSOCollection(const FObjectInitializer& ObjectInitializer);
 
 };
 

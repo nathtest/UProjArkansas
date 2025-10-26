@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=SpeakerPlaybackStartedDynamicDelegate__DelegateSignature -FallbackName=SpeakerPlaybackStartedDynamicDelegateDelegate
+#include "SpeakerPlaybackStartedDynamicDelegateDelegate.h"
 #include "VoiceOverData.h"
 #include "OEIVoiceOverBPLibrary.generated.h"
 

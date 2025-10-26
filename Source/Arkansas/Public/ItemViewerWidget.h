@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
-//CROSS-MODULE INCLUDE V2: -ModuleName=Slate -ObjectName=EScrollEaseType -FallbackName=EScrollEaseType
+#include <Slate/EScrollEaseType.h>
 #include "EItemRenderScaleModifier.h"
 #include "IndianaUserWidget.h"
 #include "InputLabelDescription.h"

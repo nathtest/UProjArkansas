@@ -1,10 +1,12 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=EOEIGender -FallbackName=EOEIGender
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ConversationReference -FallbackName=ConversationReference
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=SpeakerInfoComponent -FallbackName=SpeakerInfoComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=SpeakerReference -FallbackName=SpeakerReference
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
+#include <EOEIGender.h>
+#include "ConversationReference.h"
+#include "SpeakerInfoComponent.h"
+
+
+#include <SpeakerReference.h>
+#include <LocString.h>
 #include "ConversationDescription.h"
 #include "ConversationInstanceBlueprintParams.h"
 #include "OwSpeakerInfo.h"

@@ -1,9 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTagContainer -FallbackName=GameplayTagContainer
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
+#include <GameplayTagContainer.h>
+#include <GameplayTagContainer.h>
+#include <LocString.h>
 #include "ContainerOpenedDelegate.h"
 #include "DefaultItemStack.h"
 #include "DisplayInterface.h"
@@ -138,6 +138,9 @@ protected:
     
 public:
     AContainer(const FObjectInitializer& ObjectInitializer);
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
 
 protected:
     UFUNCTION(BlueprintCallable)

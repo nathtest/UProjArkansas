@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIGlobalVariables -ObjectName=GlobalVariableConditional -FallbackName=GlobalVariableConditional
+#include <GlobalVariableConditional.h>
 #include "BlueprintFunctionLibraryConditional.h"
 #include "CompanionStateConditional.h"
 #include "DataAssetConditional.h"

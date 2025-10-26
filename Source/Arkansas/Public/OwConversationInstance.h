@@ -2,8 +2,9 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Box -FallbackName=Box
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Guid -FallbackName=Guid
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICinematics -ObjectName=OEICineConversationInstance -FallbackName=OEICineConversationInstance
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ConversationReference -FallbackName=ConversationReference
+#include "OEICineConversationInstance.h"
+
+#include "ConversationReference.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ENodeDisplayType -FallbackName=ENodeDisplayType
 #include "CauseDamageInfo.h"
 #include "EPresentationModeCameraFadeType.h"

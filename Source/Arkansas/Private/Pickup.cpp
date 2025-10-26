@@ -1,5 +1,5 @@
 #include "Pickup.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 #include "InteractableComponent.h"
 
 APickup::APickup(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

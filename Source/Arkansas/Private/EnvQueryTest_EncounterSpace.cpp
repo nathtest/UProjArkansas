@@ -1,5 +1,5 @@
 #include "EnvQueryTest_EncounterSpace.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EnvQueryContext_Querier -FallbackName=EnvQueryContext_Querier
+#include "EnvironmentQuery/Contexts/EnvQueryContext_Querier.h"
 
 UEnvQueryTest_EncounterSpace::UEnvQueryTest_EncounterSpace() {
     this->TestPurpose = EEnvTestPurpose::Filter;

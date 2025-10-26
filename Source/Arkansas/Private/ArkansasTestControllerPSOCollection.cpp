@@ -1,6 +1,7 @@
 #include "ArkansasTestControllerPSOCollection.h"
 
-UArkansasTestControllerPSOCollection::UArkansasTestControllerPSOCollection() {
+UArkansasTestControllerPSOCollection::UArkansasTestControllerPSOCollection(const FObjectInitializer& ObjectInitializer)
+    : Super(ObjectInitializer) {
     this->WorldsToProcess.AddDefaulted(28);
     this->MapCollectionLoadRadius = 25000.00f;
     this->MaxBoundsWarning = 400000.00f;

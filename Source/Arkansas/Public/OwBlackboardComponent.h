@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=BlackboardComponent -FallbackName=BlackboardComponent
+#include "BehaviorTree/BlackboardComponent.h"
+
 #include "AIPossessable.h"
 #include "EAIDisableMask.h"
 #include "EAlertState.h"

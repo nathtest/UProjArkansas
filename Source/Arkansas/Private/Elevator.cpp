@@ -1,10 +1,14 @@
 #include "Elevator.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkComponent -FallbackName=AkComponent
+#include <AkComponent.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SplineComponent -FallbackName=SplineComponent
+#include "Components\SplineComponent.h"
+
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=StaticMeshComponent -FallbackName=StaticMeshComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEICinematics -ObjectName=MovingStageBoxComponent -FallbackName=MovingStageBoxComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "MovingStageBoxComponent.h"
+
+#include "ObsidianIDComponent.h"
 #include "BeaconComponent.h"
 #include "InteractableComponent.h"
 

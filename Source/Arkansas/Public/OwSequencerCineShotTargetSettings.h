@@ -1,7 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneObjectBindingID -FallbackName=MovieSceneObjectBindingID
+#include <MovieSceneObjectBindingID.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEICinematics -ObjectName=OEICineShotTargetSettings -FallbackName=OEICineShotTargetSettings
+#include "OEICineShotTargetSettings.h"
+
 #include "OwSequencerCineShotTargetSettings.generated.h"
 
 UCLASS(Blueprintable, EditInlineNew)

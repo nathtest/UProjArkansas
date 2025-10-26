@@ -1,6 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=NavigationSystem -ObjectName=NavMeshRenderingComponent -FallbackName=NavMeshRenderingComponent
+#include "NavMesh/NavMeshRenderingComponent.h"
+
 #include "OwNavMeshRenderingComponent.generated.h"
 
 UCLASS(Blueprintable, EditInlineNew, ClassGroup=Custom, meta=(BlueprintSpawnableComponent))

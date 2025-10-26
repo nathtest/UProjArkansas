@@ -1,5 +1,5 @@
 #include "PlayerHeadsetSpeaker.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkComponent -FallbackName=AkComponent
+#include <AkComponent.h>
 #include "OwSpeakerInfoComponent.h"
 
 APlayerHeadsetSpeaker::APlayerHeadsetSpeaker(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

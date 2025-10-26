@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=AIDynamicParam -FallbackName=AIDynamicParam
+#include "EnvironmentQuery/EnvQueryTypes.h"
 #include "EQSSelectorParam.generated.h"
 
 class UAIEQSParameter;

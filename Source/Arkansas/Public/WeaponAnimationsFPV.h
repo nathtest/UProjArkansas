@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=BodyIdle -FallbackName=BodyIdle
+#include <BodyIdle.h>
 #include "ModMatchAnimData.h"
 #include "PercentageAnimSequenceSet.h"
 #include "WeaponAnimations.h"

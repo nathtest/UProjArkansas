@@ -1,6 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=Speaker -FallbackName=Speaker
+#include "Speaker.h"
+
 #include "OEIVoiceOverActor.generated.h"
 
 UINTERFACE()

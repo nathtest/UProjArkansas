@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=BehaviorTree -FallbackName=BehaviorTree
+#include "BehaviorTree/BehaviorTree.h"
 #include "AIFilterCharacter.h"
 #include "AIFilterController.h"
 #include "OwBehaviorTree.generated.h"

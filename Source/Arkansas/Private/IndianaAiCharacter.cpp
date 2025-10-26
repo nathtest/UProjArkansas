@@ -13,11 +13,14 @@
 #include "PersonalSpaceComponent.h"
 #include "SpreadManagerComponent.h"
 #include "StatusTagStaticMeshComponent.h"
+#include <OEICCSkeletalMeshComponent.h>
+#include "OEIWwiseEmitterComponent.h"
+#include "GameplayTask.h"
+
 
 AIndianaAiCharacter::AIndianaAiCharacter(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer.SetDefaultSubobjectClass<UAIMovementComponent>(TEXT("CharMoveComp")).SetDefaultSubobjectClass<UAiTargetingComponent>(TEXT("TargetingComponent")).SetDefaultSubobjectClass<UAIChatterComponent>(TEXT("ChatterComponent"))) {
     FProperty* p_CharacterMovement_Prior = GetClass()->FindPropertyByName("CharacterMovement");
     this->IndianaCharacterMovementComponent = (UIndianaCharMovementComponent*)*p_CharacterMovement_Prior->ContainerPtrToValuePtr<UAIMovementComponent*>(this);
-    FProperty* p_CharacterMovement_Prior = GetClass()->FindPropertyByName("CharacterMovement");
     this->AIMovementComponent = (UAIMovementComponent*)*p_CharacterMovement_Prior->ContainerPtrToValuePtr<UAIMovementComponent*>(this);
     this->SpreadManagerComponent = CreateDefaultSubobject<USpreadManagerComponent>(TEXT("SpreadManager"));
     this->bInterruptAnimationProxyOnMove = true;
@@ -35,7 +38,7 @@ AIndianaAiCharacter::AIndianaAiCharacter(const FObjectInitializer& ObjectInitial
     this->PatrolSupportComponent = CreateDefaultSubobject<UAIPatrolSupportComponent>(TEXT("AIPatrolSupportComponent"));
     this->PersonalSpaceComponent = CreateDefaultSubobject<UPersonalSpaceComponent>(TEXT("PersonalSpace"));
     this->DefensiveActionsComponent = CreateDefaultSubobject<UAIDefensiveActionsComponent>(TEXT("DefensiveActions"));
-    this->GameplayTasksComponent = CreateDefaultSubobject<UGameplayTasksComponent>(TEXT("GameplayTasks"));
+    //this->GameplayTasksComponent = CreateDefaultSubobject<UGameplayTasksComponent>(TEXT("GameplayTasks"));
     this->EmitterComponent = CreateDefaultSubobject<UOEIWwiseEmitterComponent>(TEXT("CharacterEmitterComponent"));
     const FProperty* p_Mesh_Parent = GetClass()->FindPropertyByName("Mesh");
     this->AnimInstance = NULL;

@@ -1,9 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ChatterEventReference -FallbackName=ChatterEventReference
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ChatterManager -FallbackName=ChatterManager
+#include <ChatterEventReference.h>
+#include "ChatterManager.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ChatterNavigator -FallbackName=ChatterNavigator
 //CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ChatterNode -FallbackName=ChatterNode
+
 #include "OwChatterManager.generated.h"
 
 class AIndianaCharacter;

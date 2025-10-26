@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ConversationReference -FallbackName=ConversationReference
+#include "ConversationReference.h"
 #include "ConversationInstanceBlueprintParams.h"
 #include "LingerConversationEvent.generated.h"
 

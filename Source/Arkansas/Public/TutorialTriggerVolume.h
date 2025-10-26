@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TriggerVolume -FallbackName=TriggerVolume
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+#include "Engine/TriggerVolume.h"
+#include <GameplayTagContainer.h>
 #include "TutorialTriggerVolume.generated.h"
 
 UCLASS(Blueprintable)

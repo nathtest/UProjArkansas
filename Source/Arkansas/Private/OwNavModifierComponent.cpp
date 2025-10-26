@@ -1,5 +1,6 @@
 #include "OwNavModifierComponent.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=NavigationSystem -ObjectName=NavArea_Null -FallbackName=NavArea_Null
+#include "NavAreas/NavArea_Null.h"
 
 UOwNavModifierComponent::UOwNavModifierComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->bStartEnabled = true;

@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=EQuestState -FallbackName=EQuestState
+#include <EQuestState.h>
 #include "GenericCollapsableListEntry.h"
 #include "QuestListEntryWidget.generated.h"
 

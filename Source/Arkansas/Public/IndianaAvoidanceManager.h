@@ -1,7 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=AvoidanceManager -FallbackName=AvoidanceManager
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=NavEdgeProviderInterface -FallbackName=NavEdgeProviderInterface
+#include "AI/Navigation/AvoidanceManager.h"
+#include "AI/Navigation/NavEdgeProviderInterface.h"
+
 #include "IndianaAvoidanceManager.generated.h"
 
 UCLASS(Blueprintable)

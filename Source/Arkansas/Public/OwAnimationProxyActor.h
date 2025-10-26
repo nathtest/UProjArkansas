@@ -1,9 +1,10 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ComponentReference -FallbackName=ComponentReference
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=PropAnimationPlayer -FallbackName=PropAnimationPlayer
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICrowdManagerRuntime -ObjectName=OEIPassiveAnimProxy -FallbackName=OEIPassiveAnimProxy
+#include <GameplayTagContainer.h>
+#include <PropAnimationPlayer.h>
+#include <OEIPassiveAnimProxy.h>
+
 #include "ConditionalVolumeIndex.h"
 #include "LinkedAnimProxy.h"
 #include "OwAnimationProxyActor.generated.h"
@@ -47,6 +48,9 @@ protected:
     
 public:
     AOwAnimationProxyActor(const FObjectInitializer& ObjectInitializer);
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
 
 protected:
     UFUNCTION(BlueprintCallable, BlueprintImplementableEvent)

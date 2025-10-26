@@ -1,9 +1,11 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=DataAsset -FallbackName=DataAsset
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAimAssist -ObjectName=AimAdhesionConfig -FallbackName=AimAdhesionConfig
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAimAssist -ObjectName=AimFrictionConfig -FallbackName=AimFrictionConfig
+#include <AimAdhesionConfig.h>
+#include <AimFrictionConfig.h>
 #include "AimAssistData.generated.h"
+
+
 
 UCLASS(Blueprintable)
 class UAimAssistData : public UDataAsset {

@@ -1,6 +1,8 @@
 #include "ArkansasTestControllerMemoryReport.h"
 
-UArkansasTestControllerMemoryReport::UArkansasTestControllerMemoryReport() {
+UArkansasTestControllerMemoryReport::UArkansasTestControllerMemoryReport(
+    const FObjectInitializer& ObjectInitializer)
+    : Super(ObjectInitializer) {
 }
 
 

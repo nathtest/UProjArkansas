@@ -55,6 +55,17 @@ public class Arkansas : ModuleRules {
             "SlateCore",
             "TemplateSequence",
             "UMG",
+            "Launch",
         });
+
+        /*PrivateDependencyModuleNames.AddRange(new string[] {
+            "Chaos",
+            "GeometryProcessing",
+            "GeometryAlgorithms",
+            "DynamicMesh",
+            "RHI",
+            "RenderCore",
+        });*/
+
     }
 }

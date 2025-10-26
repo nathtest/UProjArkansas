@@ -1,6 +1,6 @@
 #include "EnvQueryGenerator_FeetLocation.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EnvQueryContext_Querier -FallbackName=EnvQueryContext_Querier
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EnvQueryItemType_Point -FallbackName=EnvQueryItemType_Point
+#include "EnvironmentQuery/Contexts/EnvQueryContext_Querier.h"
+#include "EnvironmentQuery/Items/EnvQueryItemType_Point.h"
 
 UEnvQueryGenerator_FeetLocation::UEnvQueryGenerator_FeetLocation() {
     this->ItemType = UEnvQueryItemType_Point::StaticClass();

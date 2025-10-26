@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+#include <GameplayTagContainer.h>
 #include "ArmorItemDefinition.h"
 #include "Templates/SubclassOf.h"
 #include "ArmorSetItemDefinition.generated.h"

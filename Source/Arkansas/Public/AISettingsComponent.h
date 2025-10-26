@@ -1,8 +1,9 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=ActorComponent -FallbackName=ActorComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=NavAgentSelector -FallbackName=NavAgentSelector
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIFlowCharts -ObjectName=ConversationReference -FallbackName=ConversationReference
+#include <AI/Navigation/NavAgentSelector.h>
+#include "ConversationReference.h"
+
 #include "AIPossessable.h"
 #include "AISettingsWander.h"
 #include "AISettings_Projectile.h"
@@ -19,6 +20,7 @@
 #include "OutOfCombatConversationRetriggerSettings.h"
 #include "SaveGameDataAIController.h"
 #include "AISettingsComponent.generated.h"
+
 
 class AActor;
 class UAIBehaviorTreeReferenceAsset;
@@ -109,7 +111,7 @@ protected:
     UPROPERTY(AdvancedDisplay, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bUseNavAgentOverride;
     
-    UPROPERTY(AdvancedDisplay, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
+    //UPROPERTY(AdvancedDisplay, BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     FNavAgentSelector NavAgentOverride;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))

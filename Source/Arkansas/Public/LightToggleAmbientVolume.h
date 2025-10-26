@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=TriggerVolume -FallbackName=TriggerVolume
+#include "Engine/TriggerVolume.h"
 #include "LightToggleAmbientVolume.generated.h"
 
 class AActor;

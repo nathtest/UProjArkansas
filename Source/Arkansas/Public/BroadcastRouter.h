@@ -25,6 +25,9 @@ protected:
 public:
     ABroadcastRouter(const FObjectInitializer& ObjectInitializer);
 
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
+
 protected:
     UFUNCTION(BlueprintCallable)
     void RemoveActorFromDevice(AActor* Actor, ADynamicEmitterVolume* Volume);

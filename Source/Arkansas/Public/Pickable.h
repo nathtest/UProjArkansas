@@ -1,7 +1,7 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=Actor -FallbackName=Actor
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
+#include <LocString.h>
 #include "OnPickablePickedDelegate.h"
 #include "Templates/SubclassOf.h"
 #include "Pickable.generated.h"
@@ -54,6 +54,9 @@ protected:
     
 public:
     APickable(const FObjectInitializer& ObjectInitializer);
+
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
 
 private:
     UFUNCTION(BlueprintCallable)

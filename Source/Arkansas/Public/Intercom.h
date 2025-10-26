@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIVoiceOver -ObjectName=VoiceOverComponentSetupData -FallbackName=VoiceOverComponentSetupData
+#include <VoiceOverComponentSetupData.h>
 #include "InteractableActor.h"
 #include "OwSpeaker.h"
 #include "Intercom.generated.h"

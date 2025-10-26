@@ -3,11 +3,11 @@
 #include "EConversationRestrictions.generated.h"
 
 UENUM()
-enum class EConversationRestrictions {
+enum class EConversationRestrictions : uint32 {
     None,
     Combat,
     HostileSE,
     Crime = 4,
-    All = 4294967295,
+    All = 0xFFFFFFFF,
 };
 

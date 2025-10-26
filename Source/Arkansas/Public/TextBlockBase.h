@@ -2,11 +2,11 @@
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=LinearColor -FallbackName=LinearColor
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector2D -FallbackName=Vector2D
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
+#include <LocString.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=FontOutlineSettings -FallbackName=FontOutlineSettings
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateColor -FallbackName=SlateColor
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateFontInfo -FallbackName=SlateFontInfo
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=TextLayoutWidget -FallbackName=TextLayoutWidget
+#include "Components/TextWidgetTypes.h"
 #include "EIndianaUIColorType.h"
 #include "ETextScalingType.h"
 #include "IndianaTextBlockStyle.h"

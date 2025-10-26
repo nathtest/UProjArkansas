@@ -1,5 +1,5 @@
 #include "EnvQueryGenerator_Self.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AIModule -ObjectName=EnvQueryItemType_Actor -FallbackName=EnvQueryItemType_Actor
+#include "EnvironmentQuery/Items/EnvQueryItemType_Actor.h"
 
 UEnvQueryGenerator_Self::UEnvQueryGenerator_Self() {
     this->ItemType = UEnvQueryItemType_Actor::StaticClass();

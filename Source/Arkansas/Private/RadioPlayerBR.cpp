@@ -1,7 +1,7 @@
 #include "RadioPlayerBR.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIWwise -ObjectName=OEIWwiseAmbientEmitterComponent -FallbackName=OEIWwiseAmbientEmitterComponent
+#include "ObsidianIDComponent.h"
+#include "OEIWwiseAmbientEmitterComponent.h"
 #include "InteractableComponent.h"
 
 ARadioPlayerBR::ARadioPlayerBR(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {

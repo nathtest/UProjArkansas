@@ -4,8 +4,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=BlueprintFunctionLibrary -FallbackName=BlueprintFunctionLibrary
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=MovieScene -ObjectName=MovieSceneObjectBindingID -FallbackName=MovieSceneObjectBindingID
+#include <GameplayTagContainer.h>
+#include <MovieSceneObjectBindingID.h>
 #include "AIOrientationControl.h"
 #include "AIWeaponFiringSettings.h"
 #include "CauseDamageInfo.h"
@@ -33,31 +33,31 @@ public:
     UAISequencerBehaviors();
 
     UFUNCTION(BlueprintCallable)
-    static void VaultToLocation(AIndianaAiCharacter* Character, FVector LocalLandingLocation, FVector LocalLedgeFrontLocation, FVector LocalLedgeBackLocation) const;
+    static void VaultToLocation(AIndianaAiCharacter* Character, FVector LocalLandingLocation, FVector LocalLedgeFrontLocation, FVector LocalLedgeBackLocation);
     
     UFUNCTION(BlueprintCallable)
-    static void UsePreviousAnimProxy(AIndianaAiCharacter* Character) const;
+    static void UsePreviousAnimProxy(AIndianaAiCharacter* Character);
     
     UFUNCTION(BlueprintCallable)
-    static void UseAnimProxy(AIndianaAiCharacter* Character, FMovieSceneObjectBindingID AnimProxyInteractableBinding, const FGameplayTag SlotKey, const bool bTeleport, const bool bTeleportOnMoveFail, const bool bInterruptOnMove, const bool bInfiniteDuration, const bool bAutoDeactivate) const;
+    static void UseAnimProxy(AIndianaAiCharacter* Character, FMovieSceneObjectBindingID AnimProxyInteractableBinding, const FGameplayTag SlotKey, const bool bTeleport, const bool bTeleportOnMoveFail, const bool bInterruptOnMove, const bool bInfiniteDuration, const bool bAutoDeactivate);
     
     UFUNCTION(BlueprintCallable)
-    static void UnequipArmorInSlot(AIndianaAiCharacter* Character, EArmorSlot ArmorSlot) const;
+    static void UnequipArmorInSlot(AIndianaAiCharacter* Character, EArmorSlot ArmorSlot);
     
     UFUNCTION(BlueprintCallable)
-    static void TriggerQuickMelee(AIndianaAiCharacter* Character) const;
+    static void TriggerQuickMelee(AIndianaAiCharacter* Character);
     
     UFUNCTION(BlueprintCallable)
-    static void Suicide(AIndianaAiCharacter* Character) const;
+    static void Suicide(AIndianaAiCharacter* Character);
     
     UFUNCTION(BlueprintCallable)
-    static void StopUsingAnimProxy(AIndianaAiCharacter* Character, bool bSkipProxyExit, bool bExitImmediatelyOnNodeSkip) const;
+    static void StopUsingAnimProxy(AIndianaAiCharacter* Character, bool bSkipProxyExit, bool bExitImmediatelyOnNodeSkip);
     
 protected:
-    UFUNCTION(BlueprintCallable)
+    //UFUNCTION(BlueprintCallable)
     void ShootTarget_SwitchToNeutralAnimState(TWeakObjectPtr<AIndianaAiCharacter> InCharacter, bool bInstantBlend) const;
     
-    UFUNCTION(BlueprintCallable)
+    //UFUNCTION(BlueprintCallable)
     void ShootTarget_StopShooting(TWeakObjectPtr<AIndianaAiCharacter> InCharacter) const;
     
     UFUNCTION(BlueprintCallable)
@@ -69,102 +69,102 @@ protected:
     UFUNCTION(BlueprintCallable)
     void ShootTarget_OnPlayerSkippedNode(UOwConversationInstance* InConversationInstance) const;
     
-    UFUNCTION(BlueprintCallable)
+    //UFUNCTION(BlueprintCallable)
     void ShootTarget_CombatStateFullyBlended(TWeakObjectPtr<AIndianaAiCharacter> InCharacter) const;
     
 public:
     UFUNCTION(BlueprintCallable)
-    static void ShootTarget(AIndianaAiCharacter* Character, const FMovieSceneObjectBindingID& Target, int32 NumOfShots, int32 InstantKillShotIndex, FName SocketOnTarget, bool bShouldDismemberOnKill, bool bBlendAnimationState) const;
+    static void ShootTarget(AIndianaAiCharacter* Character, const FMovieSceneObjectBindingID& Target, int32 NumOfShots, int32 InstantKillShotIndex, FName SocketOnTarget, bool bShouldDismemberOnKill, bool bBlendAnimationState);
     
     UFUNCTION(BlueprintCallable)
-    static void SetOrientation(AIndianaAiCharacter* Character, TEnumAsByte<ETrackingRegion> TrackingRegion, FAIOrientationControl AIOrientationControl) const;
+    static void SetOrientation(AIndianaAiCharacter* Character, TEnumAsByte<ETrackingRegion> TrackingRegion, FAIOrientationControl AIOrientationControl);
     
     UFUNCTION(BlueprintCallable)
-    static void SetHeadTrackingLockState(AIndianaAiCharacter* Character, bool bLocked, bool bMaintainCurrentOrientation) const;
+    static void SetHeadTrackingLockState(AIndianaAiCharacter* Character, bool bLocked, bool bMaintainCurrentOrientation);
     
     UFUNCTION(BlueprintCallable)
-    static void SetConversationLookAtTarget(AIndianaAiCharacter* Character, const FMovieSceneObjectBindingID& Binding, bool bPersist, bool bTurnBody, bool bSnapToLookAtOnNodeSkipped, const FForceBodyTrackingAngleParams& ExactAngleParams) const;
+    static void SetConversationLookAtTarget(AIndianaAiCharacter* Character, const FMovieSceneObjectBindingID& Binding, bool bPersist, bool bTurnBody, bool bSnapToLookAtOnNodeSkipped, const FForceBodyTrackingAngleParams& ExactAngleParams);
     
     UFUNCTION(BlueprintCallable)
-    static void SetConversationBodyRotationComfortAngle(AIndianaAiCharacter* Character, float Angle, bool bReevaluateBodyAngle) const;
+    static void SetConversationBodyRotationComfortAngle(AIndianaAiCharacter* Character, float Angle, bool bReevaluateBodyAngle);
     
     UFUNCTION(BlueprintCallable)
-    static void SetCanUnequipWeapon(AIndianaAiCharacter* Character, bool bCanUnequip) const;
+    static void SetCanUnequipWeapon(AIndianaAiCharacter* Character, bool bCanUnequip);
     
     UFUNCTION(BlueprintCallable)
-    static void SetBodyTrackingLockState(AIndianaAiCharacter* Character, bool bLocked, bool bMaintainCurrentOrientation) const;
+    static void SetBodyTrackingLockState(AIndianaAiCharacter* Character, bool bLocked, bool bMaintainCurrentOrientation);
     
     UFUNCTION(BlueprintCallable)
-    static void SetBodyTrackingIgnoreState(AIndianaAiCharacter* Character, TEnumAsByte<ETrackingRegion> TrackingRegion, bool bIgnoreBodyTracking) const;
+    static void SetBodyTrackingIgnoreState(AIndianaAiCharacter* Character, TEnumAsByte<ETrackingRegion> TrackingRegion, bool bIgnoreBodyTracking);
     
     UFUNCTION(BlueprintCallable)
-    static void ResetConversationBodyRotationComfortAngle(AIndianaAiCharacter* Character) const;
+    static void ResetConversationBodyRotationComfortAngle(AIndianaAiCharacter* Character);
     
     UFUNCTION(BlueprintCallable)
-    static void RemoveForcedBodyAngleRelativeToTarget(AIndianaAiCharacter* Character) const;
+    static void RemoveForcedBodyAngleRelativeToTarget(AIndianaAiCharacter* Character);
     
     UFUNCTION(BlueprintCallable)
-    static void RemoveCurrentStageMarkLock(AIndianaAiCharacter* Character) const;
+    static void RemoveCurrentStageMarkLock(AIndianaAiCharacter* Character);
     
     UFUNCTION(BlueprintCallable)
-    static void RegisterConversationParticipant(AIndianaAiCharacter* Character) const;
+    static void RegisterConversationParticipant(AIndianaAiCharacter* Character);
     
     UFUNCTION(BlueprintCallable)
-    static void PlayMotionWarpingAnimMontage(AIndianaAiCharacter* Character, UAnimMontage* MontageToPlay, TArray<FTransform> LocalSyncTransforms) const;
+    static void PlayMotionWarpingAnimMontage(AIndianaAiCharacter* Character, UAnimMontage* MontageToPlay, TArray<FTransform> LocalSyncTransforms);
     
     UFUNCTION(BlueprintCallable)
-    static void PlayAnimMontage(AIndianaAiCharacter* Character, UAnimMontage* MontageToPlay) const;
+    static void PlayAnimMontage(AIndianaAiCharacter* Character, UAnimMontage* MontageToPlay);
     
     UFUNCTION(BlueprintCallable)
-    static void MantleToLocation(AIndianaAiCharacter* Character, FVector LocalLandingLocation, FVector LocalLedgeLocation) const;
+    static void MantleToLocation(AIndianaAiCharacter* Character, FVector LocalLandingLocation, FVector LocalLedgeLocation);
     
     UFUNCTION(BlueprintCallable)
-    static void JumpAcrossToLocation(AIndianaAiCharacter* Character, FVector LocalLandingLocation, float HeightOverride) const;
+    static void JumpAcrossToLocation(AIndianaAiCharacter* Character, FVector LocalLandingLocation, float HeightOverride);
     
     UFUNCTION(BlueprintCallable)
-    static void HolsterWeapon(AIndianaAiCharacter* Character, bool bInstant) const;
+    static void HolsterWeapon(AIndianaAiCharacter* Character, bool bInstant);
     
     UFUNCTION(BlueprintCallable)
-    static void FireWeaponStop(AIndianaAiCharacter* Character) const;
+    static void FireWeaponStop(AIndianaAiCharacter* Character);
     
     UFUNCTION(BlueprintCallable)
-    static void FireWeaponStart(AIndianaAiCharacter* Character, const FAIWeaponFiringSettings& AIWeaponFiringSettings) const;
+    static void FireWeaponStart(AIndianaAiCharacter* Character, const FAIWeaponFiringSettings& AIWeaponFiringSettings);
     
     UFUNCTION(BlueprintCallable)
-    static void ExitSequencer(AIndianaAiCharacter* Character) const;
+    static void ExitSequencer(AIndianaAiCharacter* Character);
     
     UFUNCTION(BlueprintCallable)
-    static void EquipWeaponByTag(AIndianaAiCharacter* Character, const FGameplayTag Tag, bool bInstant) const;
+    static void EquipWeaponByTag(AIndianaAiCharacter* Character, const FGameplayTag Tag, bool bInstant);
     
     UFUNCTION(BlueprintCallable)
-    static void EquipWeaponBySlot(AIndianaAiCharacter* Character, int32 SlotIndex, bool bInstant) const;
+    static void EquipWeaponBySlot(AIndianaAiCharacter* Character, int32 SlotIndex, bool bInstant);
     
     UFUNCTION(BlueprintCallable)
-    static void EquipWeaponByInstance(AIndianaAiCharacter* Character, const UWeapon* Weapon, bool bInstant) const;
+    static void EquipWeaponByInstance(AIndianaAiCharacter* Character, const UWeapon* Weapon, bool bInstant);
     
     UFUNCTION(BlueprintCallable)
-    static void EquipItem(AIndianaAiCharacter* Character, const FItemDefinitionVariant& ItemDefinition) const;
+    static void EquipItem(AIndianaAiCharacter* Character, const FItemDefinitionVariant& ItemDefinition);
     
     UFUNCTION(BlueprintCallable)
-    static void DropDownToLocation(AIndianaAiCharacter* Character, FVector LocalLandingLocation, FVector LocalLedgeLocation) const;
+    static void DropDownToLocation(AIndianaAiCharacter* Character, FVector LocalLandingLocation, FVector LocalLedgeLocation);
     
     UFUNCTION(BlueprintCallable)
-    static void ClearPersistentLookAtTarget(AIndianaAiCharacter* Character) const;
+    static void ClearPersistentLookAtTarget(AIndianaAiCharacter* Character);
     
     UFUNCTION(BlueprintCallable)
-    static void ClearOrientation(AIndianaAiCharacter* Character, TEnumAsByte<ETrackingRegion> TrackingRegion) const;
+    static void ClearOrientation(AIndianaAiCharacter* Character, TEnumAsByte<ETrackingRegion> TrackingRegion);
     
     UFUNCTION(BlueprintCallable)
-    static void ClearAllOrientation(AIndianaAiCharacter* Character) const;
+    static void ClearAllOrientation(AIndianaAiCharacter* Character);
     
     UFUNCTION(BlueprintCallable)
-    static void CallGroupBehaviorEvent(AIndianaAiCharacter* Character, FName EventName) const;
+    static void CallGroupBehaviorEvent(AIndianaAiCharacter* Character, FName EventName);
     
     UFUNCTION(BlueprintCallable)
-    static void AssignStageMark(AIndianaAiCharacter* Character, FMovieSceneObjectBindingID StageMarkActorBinding, EStageMarkAssignmentType StageMarkAssignmentType, bool bApplyStageMarkLock, bool bTeleportOnNodeSkipped) const;
+    static void AssignStageMark(AIndianaAiCharacter* Character, FMovieSceneObjectBindingID StageMarkActorBinding, EStageMarkAssignmentType StageMarkAssignmentType, bool bApplyStageMarkLock, bool bTeleportOnNodeSkipped);
     
     UFUNCTION(BlueprintCallable)
-    static void ApplyForcedBodyAngleRelativeToTarget(AIndianaAiCharacter* Character, float InAngle) const;
+    static void ApplyForcedBodyAngleRelativeToTarget(AIndianaAiCharacter* Character, float InAngle);
     
 };
 

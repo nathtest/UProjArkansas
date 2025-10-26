@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=TemplateSequence -ObjectName=SequenceCameraShakePattern -FallbackName=SequenceCameraShakePattern
+#include "SequenceCameraShake.h"
 #include "OwSequenceCameraShakePattern.generated.h"
 
 UCLASS(Blueprintable, EditInlineNew)
@@ -13,7 +13,7 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere, meta=(AllowPrivateAccess=true))
     bool bApplyAsAbsolute;
     
-    UOwSequenceCameraShakePattern();
+    UOwSequenceCameraShakePattern(const FObjectInitializer& ObjectInitializer);
 
 };
 

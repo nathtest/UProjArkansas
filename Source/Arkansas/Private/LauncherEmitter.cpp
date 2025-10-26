@@ -1,5 +1,5 @@
 #include "LauncherEmitter.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 #include "EquipmentComponent.h"
 #include "InteractLookAtTriggerComponent.h"
 #include "InteractableComponent.h"

@@ -1,6 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIMusic -ObjectName=OEIMusicManager -FallbackName=OEIMusicManager
+#include "OEIMusicManager.h"
+#include "OEIMusicManager.h"
+
 #include "EArithmeticOperation.h"
 #include "EPhaseOfDay.h"
 #include "OnLevelMusicLoadedDelegate.h"

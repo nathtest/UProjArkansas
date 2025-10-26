@@ -56,6 +56,10 @@ public:
     
     ACharacterSpawner(const FObjectInitializer& ObjectInitializer);
 
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, meta = (AllowPrivateAccess = true))
+    bool bShouldSaveGameState;
+    
+
 protected:
     UFUNCTION(BlueprintCallable)
     void TEMP_ActivateActor(AActor* Actor);

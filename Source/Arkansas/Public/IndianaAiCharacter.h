@@ -4,8 +4,8 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Rotator -FallbackName=Rotator
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Transform -FallbackName=Transform
 //CROSS-MODULE INCLUDE V2: -ModuleName=CoreUObject -ObjectName=Vector -FallbackName=Vector
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIAnimProxyRuntime -ObjectName=AnimationProxyResponderInterface -FallbackName=AnimationProxyResponderInterface
+#include <GameplayTagContainer.h>
+#include "AnimationProxyResponderInterface.h"
 #include "AIBehaviorClassUserReferenceInterface.h"
 #include "AICinematicModeParams.h"
 #include "AISettingsWander.h"
@@ -35,6 +35,9 @@
 #include "OnTeleportCharacterCompletedDelegate.h"
 #include "StatusEffectInstanceHandle.h"
 #include "Templates/SubclassOf.h"
+#include "GameplayTask.h"
+#include "GameFramework/Pawn.h"
+#include "GameFramework/Controller.h"
 #include "IndianaAiCharacter.generated.h"
 
 class AActor;

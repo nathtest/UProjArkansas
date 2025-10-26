@@ -1,5 +1,5 @@
 #include "FogOfWarVolume.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 
 AFogOfWarVolume::AFogOfWarVolume(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->bGenerateOverlapEventsDuringLevelStreaming = true;

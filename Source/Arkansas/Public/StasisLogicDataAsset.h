@@ -1,6 +1,8 @@
 #pragma once
 #include "CoreMinimal.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=StasisLogicBaseDataAsset -FallbackName=StasisLogicBaseDataAsset
+#include "Engine\StasisLogicBaseDataAsset.h"
+
 #include "LogicalGroupedExpression.h"
 #include "StasisLogicDataAsset.generated.h"
 

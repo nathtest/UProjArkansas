@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEIText -ObjectName=LocString -FallbackName=LocString
+#include <LocString.h>
 #include "EWorkbenchState.h"
 #include "IndianaInterfaceUserWidget.h"
 #include "NewWorkbenchWidget.generated.h"

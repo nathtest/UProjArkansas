@@ -3,7 +3,7 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=ESelectInfo -FallbackName=ESelectInfo
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=Margin -FallbackName=Margin
 //CROSS-MODULE INCLUDE V2: -ModuleName=SlateCore -ObjectName=SlateColor -FallbackName=SlateColor
-//CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=Widget -FallbackName=Widget
+#include "Components/Widget.h"
 #include "ComponentEventMCDDelegate.h"
 #include "IndianaComboBoxStyle.h"
 #include "ComboBoxStringBase.generated.h"

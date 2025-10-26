@@ -1,5 +1,6 @@
 #include "GlobalAudioData.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkAudioEvent -FallbackName=AkAudioEvent
+#include "AkAudioEvent.h"
 
 UGlobalAudioData::UGlobalAudioData() {
     this->DefaultPickupSound = NULL;

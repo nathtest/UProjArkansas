@@ -1,7 +1,9 @@
 #include "Ladder.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=AkAudio -ObjectName=AkComponent -FallbackName=AkComponent
+#include <AkComponent.h>
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SceneComponent -FallbackName=SceneComponent
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SplineComponent -FallbackName=SplineComponent
+#include "Components\SplineComponent.h"
+
 #include "InteractableComponent.h"
 #include "MotionWarpPointComponent.h"
 #include "OwAnimationProxyComponent.h"

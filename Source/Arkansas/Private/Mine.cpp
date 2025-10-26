@@ -1,5 +1,7 @@
 #include "Mine.h"
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=SphereComponent -FallbackName=SphereComponent
+#include "Components\SphereComponent.h"
+
 //CROSS-MODULE INCLUDE V2: -ModuleName=Engine -ObjectName=StaticMeshComponent -FallbackName=StaticMeshComponent
 #include "HealthComponent.h"
 

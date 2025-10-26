@@ -2,7 +2,7 @@
 //CROSS-MODULE INCLUDE V2: -ModuleName=UMG -ObjectName=ESlateVisibility -FallbackName=ESlateVisibility
 
 UOWRichTextBlockBase::UOWRichTextBlockBase() {
-    this->Visibility = ESlateVisibility::Visible;
+    //this->Visibility = ESlateVisibility::Visible;
     this->AutoWrapText = true;
     this->bUseShadowOffset = true;
     this->bUseOutline = false;

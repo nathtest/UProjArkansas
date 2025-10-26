@@ -1,5 +1,5 @@
 #include "ConversationTriggerBox.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=OEICommon -ObjectName=ObsidianIDComponent -FallbackName=ObsidianIDComponent
+#include "ObsidianIDComponent.h"
 
 AConversationTriggerBox::AConversationTriggerBox(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {
     this->bIsCompanion = false;

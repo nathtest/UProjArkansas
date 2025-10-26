@@ -1,6 +1,6 @@
 #pragma once
 #include "CoreMinimal.h"
-//CROSS-MODULE INCLUDE V2: -ModuleName=GameplayTags -ObjectName=GameplayTag -FallbackName=GameplayTag
+#include <GameplayTagContainer.h>
 #include "AddictionModifier.generated.h"
 
 USTRUCT(BlueprintType)
@@ -16,3 +16,7 @@ public:
     ARKANSAS_API FAddictionModifier();
 };
 
+FORCEINLINE uint32 GetTypeHash(const FAddictionModifier& Mod)
+{
+    return HashCombine(::GetTypeHash(Mod.AmountToRemove), ::GetTypeHash(Mod.AmountToRemove));
+}
